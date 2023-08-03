@@ -11,8 +11,8 @@
         <img class="logo__logo-image" src="img/logo-mobile.svg" width="60" height="50" alt="Логотип Cat Energy.">
       </a>
 
-      <a class="logo logo-text" href="#">
-        <img class="logo-text__logo-text-image" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+      <a class="logo logo--text" href="#">
+        <img class="logo__logo-image" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
       </a>
 
       <nav class="main-nav">
@@ -24,13 +24,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a href="#">главная</a>
+            <a class="site-list__link" href="#">главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">каталог продукции</a>
+            <a class="site-list__link" href="#">каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="#">подбор программы</a>
+            <a class="site-list__link" href="#">подбор программы</a>
         </ul>
       </div>
 
@@ -38,9 +38,9 @@
     </header>
     <main class="main-container">
       <section class="filter">
-        <h1 class="filter__title">Подбор программы</h1>
+        <h1 class="title">Подбор программы</h1>
         <p class="filter__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Информация о коте.</legend>
             <label class="form__label">ИМЯ:*
@@ -80,7 +80,7 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
             <label class="form__label">
-              <input class="form__input" type="text" name="comment" placeholder="Расскажите обо всех повАдках кота">
+              <textarea class="form__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
 
@@ -131,7 +131,7 @@
         </li>
       </ul>
 
-      <a class="main-footer__copyright copyright" href="#">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy.</span>
       </a>
     </footer>
