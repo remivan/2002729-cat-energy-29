@@ -1,0 +1,15 @@
+@use "base/variables.scss";
+
+.navigation-list {
+  list-style: none;
+}
+
+
+.navigation-list__link {
+  color: variables.$color-black;
+  font-family: variables.$oswald-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+

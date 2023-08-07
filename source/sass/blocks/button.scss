@@ -1,0 +1,9 @@
+@use "base/variables.scss";
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: variables.$basic-green;
+  color: variables.$color-white;
+  text-transform: uppercase;
+}

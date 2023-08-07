@@ -1,0 +1,27 @@
+@use "base/variables.scss";
+
+.directions-list {
+  font-family: variables.$oswald-font;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.directions-card__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.directions-card__description {
+  font-family: variables.$lato-font;
+  color: variables.$grey;
+}
+
+.directions-card__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: variables.$color-black;
+}
