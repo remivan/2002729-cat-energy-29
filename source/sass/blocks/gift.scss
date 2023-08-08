@@ -1,0 +1,11 @@
+@use "base/variables.scss";
+
+.gift {
+  background-image: url("../img/gift-background.png");
+  background-color: variables.$color-green;
+}
+
+.gift__text {
+  font-size: 16px;
+  line-height: 20px;
+}

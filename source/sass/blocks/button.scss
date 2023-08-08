@@ -12,4 +12,9 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  &--grey {
+    background-color: variables.$color-grey-light;
+    color: variables.$color-grey-dark;
+  }
 }

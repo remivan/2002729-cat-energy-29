@@ -1,0 +1,7 @@
+@use "base/variables.scss";
+@use "base/mixins.scss" as *;
+
+.catalog__list {
+  @include list;
+}
+
