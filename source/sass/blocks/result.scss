@@ -1,0 +1,12 @@
+@use "base/variables.scss";
+
+.result__value {
+  font-family: variables.$oswald-font;
+  color: variables.$color-black;
+  font-weight: 400;
+}
+
+.result__description {
+  font-size: 12px;
+  line-height: 12px;
+}

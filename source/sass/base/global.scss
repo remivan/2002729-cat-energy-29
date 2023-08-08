@@ -1,11 +1,12 @@
 @use "base/variables.scss";
 
 body {
+  font-family: variables.$lato-font;
   margin: 0;
   font-size: 14px;
   line-height: 18px;
   background-color: variables.$color-white;
-
+  color: variables.$color-grey-dark;
 }
 
 img {
@@ -16,5 +17,11 @@ img {
 
 a {
   text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 

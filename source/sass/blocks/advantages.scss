@@ -1,17 +1,14 @@
 @use "base/variables.scss";
-
-.advantages {
-  font-family: variables.$oswald-font;
-}
+@use "base/mixins.scss" as *;
 
 .advantages__title {
+  font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 40px;
+  color: variables.$color-black;
   font-weight: 400;
 }
 
-.advantages-list {
-  font-family: variables.$lato-font;
-  color: variables.$grey;
-  list-style: none;
+.advantages__list {
+  @include list;
 }

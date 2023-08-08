@@ -1,7 +1,6 @@
 @use "base/variables.scss";
 
 .hero {
-  font-family: variables.$oswald-font;
   color: variables.$color-white;
   background-image: url("../img/promo-background.png");
   background-repeat: no-repeat;
@@ -9,6 +8,7 @@
 }
 
 .hero__text {
+  font-family: variables.$oswald-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

@@ -1,4 +1,7 @@
+@use "base/variables.scss";
+
 .tittle {
+  font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;

@@ -1,0 +1,21 @@
+@use "base/variables.scss";
+
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: variables.$oswald-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: variables.$color-black;
+  font-weight: 400;
+}
+
+.example__price {
+  font-family: variables.$oswald-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$color-black;
+  text-transform: uppercase;
+}
