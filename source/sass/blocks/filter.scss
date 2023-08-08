@@ -1,0 +1,7 @@
+@use "base/variables.scss";
+
+.filter__text {
+  font-family: variables.$oswald-font;
+  color: variables.$color-black;
+  text-transform: uppercase;
+}

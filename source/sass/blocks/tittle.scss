@@ -4,5 +4,10 @@
   font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 36px;
+  color: variables.$color-black;
   font-weight: 400;
+}
+
+.tittle--white {
+  color: variables.$color-white;
 }

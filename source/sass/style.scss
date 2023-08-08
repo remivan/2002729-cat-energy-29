@@ -5,7 +5,7 @@
 @use "base/global.scss";
 @use "base/mixins.scss";
 
-//blocks
+//index
 @use "blocks/navigation-list.scss";
 @use "blocks/hero.scss";
 @use "blocks/tittle.scss";
@@ -19,3 +19,7 @@
 @use "blocks/copyright.scss";
 @use "blocks/result.scss";
 
+
+//form
+@use "blocks/filter.scss";
+@use "blocks/form.scss";

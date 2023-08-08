@@ -2,9 +2,14 @@
 
 .button {
   font-family: variables.$oswald-font;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: variables.$color-green;
   color: variables.$color-white;
   text-transform: uppercase;
+
+  &--small {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
