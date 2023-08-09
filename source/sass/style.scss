@@ -1,30 +1,21 @@
-// Начните писать стили здесь
-//base
 @use "base/variables.scss";
 @use "base/fonts.scss";
 @use "base/global.scss";
 @use "base/mixins.scss";
-
-//index
 @use "blocks/navigation-list.scss";
 @use "blocks/hero.scss";
 @use "blocks/tittle.scss";
 @use "blocks/button.scss";
 @use "blocks/visually-hidden.scss";
 @use "blocks/directions.scss";
-@use "blocks/directions-list.scss";
+@use "blocks/directions-card.scss";
 @use "blocks/advantages.scss";
 @use "blocks/example.scss";
 @use "blocks/main-footer.scss";
 @use "blocks/copyright.scss";
 @use "blocks/result.scss";
-
-
-//form
 @use "blocks/filter.scss";
 @use "blocks/form.scss";
-
-//catalog
 @use "blocks/catalog.scss";
 @use "blocks/catalog-card.scss";
 @use "blocks/additionally.scss";

@@ -8,7 +8,7 @@
 .catalog-card__title {
   font-family: variables.$oswald-font;
   font-weight: 400;
-  color: #222222;
+  color: variables.$color-black-lighter;
   text-transform: uppercase;
 }
 
@@ -21,4 +21,9 @@
   font-family: variables.$oswald-font;
   color: variables.$color-black-light;
   text-transform: uppercase;
+}
+
+.catalog-more__description--more {
+  font-size: 12px;
+  line-height: 16px;
 }
