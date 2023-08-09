@@ -1,0 +1,20 @@
+@use "base/variables.scss";
+
+.button {
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: variables.$color-green;
+  color: variables.$color-white;
+  text-transform: uppercase;
+
+  &--small {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--grey {
+    background-color: variables.$color-grey-light;
+    color: variables.$color-grey-dark;
+  }
+}

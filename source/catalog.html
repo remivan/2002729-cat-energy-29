@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -20,15 +21,15 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">главная</a>
+        <ul class="main-nav__list navigation-list">
+          <li class="navigation-list__item navigation-list__item--current">
+            <a class="navigation-list__link" href="index.html">главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">каталог продукции</a>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">подбор программы</a>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="form.html">подбор программы</a>
         </ul>
       </div>
       </nav>
@@ -36,7 +37,7 @@
 
     <main class="main-container">
     <section class="catalog">
-      <h1 class="title">Каталог продукции</h1>
+      <h1 class="tittle">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item catalog-card">
           <a class="catalog-card__link" href="#">
@@ -283,10 +284,10 @@
           </dl>
           <a class="catalog-card__link button" href="#">заказать</a>
         </li>
-        <li class="catalog__item catalog-more">
-          <p class="catalog-more__text">Показать еще 100500 товаров</p>
-          <p class="catalog-more__description">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-more__link button">показать все</a>
+        <li class="catalog__item catalog-card catalog-card--more">
+          <p class="catalog-card__text catalog-card__text--more">Показать еще 100500 товаров</p>
+          <p class="catalog-more__description catalog-more__description--more">На самом деле вкусов гораздо больше!</p>
+          <a class="catalog-more__link button button--grey">показать все</a>
         </li>
       </ul>
 
@@ -362,33 +363,37 @@
   <footer class="main-footer">
     <p class="main-footer__title">приглашаем к сотрудничеству дилеров!</p>
     <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    <img class="main-footer__map" src="img/map.jpg" width="320" height="362" alt="Расположение на карте.">
+    <div class="main-footer__wrapper">
 
-    <a class="main-footer__logo logo" href="#">
-      <span class="visually-hidden">Логотип Cat Energy.</span>
-    </a>
+      <img class="main-footer__map" src="img/map.jpg" width="320" height="362" alt="Расположение на карте.">
 
-    <ul class="main-footer__social social">
-      <li class="social__item">
-        <a class="social__link"  href="#">
-          <span class="visually-hidden">Вконтакте.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link"  href="#">
-          <span class="visually-hidden">Ютуб.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link"  href="#">
-          <span class="visually-hidden">Телеграм.</span>
-        </a>
-      </li>
-    </ul>
+      <a class="main-footer__logo logo" href="#">
+        <span class="visually-hidden">Логотип Cat Energy.</span>
+      </a>
 
-    <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="copyright__text">HTML Academy.</span>
-    </a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link"  href="#">
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link"  href="#">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link"  href="#">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy.</span>
+      </a>
+
+    </div>
   </footer>
 
   </body>

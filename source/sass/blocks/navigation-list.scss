@@ -1,0 +1,14 @@
+@use "base/variables.scss";
+@use "base/mixins.scss" as *;
+
+.navigation-list {
+  @include list;
+  font-family: variables.$oswald-font;
+}
+
+.navigation-list__link {
+  color: variables.$color-black;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+@use "base/variables.scss";
+@use "base/mixins.scss" as *;
+
+.directions-card__title {
+  font-family: variables.$oswald-font;
+  font-size: 24px;
+  line-height: 37px;
+  color: variables.$color-black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.directions-card {
+  background-color: variables.$color-grey-light;
+}
+
+.directions-card__link {
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: variables.$color-black;
+}

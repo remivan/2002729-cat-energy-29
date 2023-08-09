@@ -1,0 +1,14 @@
+@use "base/variables.scss";
+@use "base/mixins.scss" as *;
+
+.advantages__title {
+  font-family: variables.$oswald-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: variables.$color-black;
+  font-weight: 400;
+}
+
+.advantages__list {
+  @include list;
+}

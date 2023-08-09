@@ -1,0 +1,29 @@
+@use "base/variables.scss";
+
+.catalog-card {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-card__title {
+  font-family: variables.$oswald-font;
+  font-weight: 400;
+  color: variables.$color-black-lighter;
+  text-transform: uppercase;
+}
+
+.catalog-card__item {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-card__text--more {
+  font-family: variables.$oswald-font;
+  color: variables.$color-black-light;
+  text-transform: uppercase;
+}
+
+.catalog-more__description--more {
+  font-size: 12px;
+  line-height: 16px;
+}
