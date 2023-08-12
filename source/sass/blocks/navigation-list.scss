@@ -12,3 +12,12 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: variables.$width-tablet) {
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+}

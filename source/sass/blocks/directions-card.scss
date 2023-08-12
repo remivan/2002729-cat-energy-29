@@ -1,6 +1,20 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
+.directions-card {
+  background-color: variables.$color-grey-light;
+  padding: 30px 33px 18px 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    padding: 77px 316px 53px 33px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+  }
+}
+
 .directions-card__title {
   font-family: variables.$oswald-font;
   font-size: 24px;
@@ -8,10 +22,18 @@
   color: variables.$color-black;
   font-weight: 400;
   text-transform: uppercase;
-}
+  margin: 0;
+  margin-left: 90px;
 
-.directions-card {
-  background-color: variables.$color-grey-light;
+  @media (min-width: variables.$width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 53px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-left: 214px;
+  }
 }
 
 .directions-card__link {
@@ -20,4 +42,27 @@
   line-height: 16px;
   text-transform: uppercase;
   color: variables.$color-black;
+  margin-top: 38px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-top: 48px;
+    margin-left: 52px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-top: 27px;
+  }
+}
+
+.directions-card__description {
+  margin-top: 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-top: 24px;
+    margin-left: 52px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-top: 73px;
+  }
 }

@@ -4,10 +4,30 @@
   font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 36px;
-  color: variables.$color-black;
+  color: variables.$color-white;
   font-weight: 400;
+  margin: 0;
 }
 
-.tittle--white {
-  color: variables.$color-white;
+.tittle--index {
+  text-align: center;
+  margin: 0 15px 0 15px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 65px 202px 0 90px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 110px 720px 0 80px;
+  }
+}
+
+
+@media (min-width: variables.$width-tablet) {
+  .tittle--index {
+    color: variables.$color-black;
+  }
 }

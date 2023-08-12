@@ -11,4 +11,31 @@
 
 .advantages__list {
   @include list;
+  margin-top: 40px;
+  display: grid;
+
+  @media (min-width: variables.$width-tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 80px;
+  }
+}
+
+.advantages__item {
+  margin-left: 80px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-left: 0;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-left: 0;
+  }
 }

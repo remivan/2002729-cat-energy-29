@@ -4,7 +4,14 @@
   color: variables.$color-white;
   background-image: url("../img/promo-background.png");
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
+
+  padding-top: 27px;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-top: 0;
+    background-color: variables.$color-white;
+    color: variables.$color-black;
+  }
 }
 
 .hero__text {
@@ -12,4 +19,13 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 25px 42px 0 40px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin: 40px 335px 0 90px;
+  }
+}
+
+.hero__img {
+  padding-top: 29px;
 }

@@ -1,7 +1,13 @@
 @use "base/variables.scss";
+@use "base/mixins.scss" as *;
 
 .example {
-  background-color: #eaeaea;
+  background-color: variables.$color-background-grey;
+  padding-top: 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    background-color: variables.$color-white;
+  }
 }
 
 .example__title {
@@ -10,6 +16,7 @@
   line-height: 40px;
   color: variables.$color-black;
   font-weight: 400;
+  margin: 0;
 }
 
 .example__price {
@@ -18,4 +25,59 @@
   line-height: 20px;
   color: variables.$color-black;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    text-align: right;
+    margin-top: 70px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-top: 84px;
+    width: 327px;
+  }
+}
+
+.example__list {
+  @include list;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 32px;
+  }
+
+  @media (min-width: variables.$width-tablet) {
+    margin-top: 84px;
+  }
+}
+
+.example__description {
+  margin-top: 40px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 146px 784px 0 0;
+  }
+}
+
+.example__container {
+  @media (min-width: variables.$width-tablet) {
+    display: flex;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: block;
+  }
 }

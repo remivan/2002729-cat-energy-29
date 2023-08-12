@@ -1,0 +1,10 @@
+@use "base/variables.scss";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: variables.$width-tablet) {
+    flex-direction: row;
+  }
+}

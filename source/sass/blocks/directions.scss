@@ -1,6 +1,21 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
+.directions {
+  padding-top: 20px;
+}
+
 .directions__list {
   @include list;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: variables.$width-tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }

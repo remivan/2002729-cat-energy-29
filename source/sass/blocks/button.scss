@@ -7,10 +7,15 @@
   background-color: variables.$color-green;
   color: variables.$color-white;
   text-transform: uppercase;
+  padding: 10px 109px;
+  text-align: center;
+  display: block;
+
 
   &--small {
     font-size: 14px;
     line-height: 18px;
+    padding: 7px 44px;
   }
 
   &--grey {
