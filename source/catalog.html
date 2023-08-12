@@ -8,357 +8,383 @@
   </head>
   <body class="page__body">
     <header class="main-header">
+      <div class="main-header__wrapper container">
+        <a class="logo" href="#">
+          <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </a>
 
-      <a class="logo" href="#">
-        <img class="logo__logo-image" src="img/logo-mobile.svg" width="60" height="50" alt="Логотип Cat Energy.">
-      </a>
+        <a class="logo logo--text" href="#">
+          <img class="logo__logo-image" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+        </a>
 
-      <a class="logo logo--text" href="#">
-        <img class="logo__logo-image" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
+        <nav class="main-nav">
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list navigation-list">
-          <li class="navigation-list__item navigation-list__item--current">
-            <a class="navigation-list__link" href="index.html">главная</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">каталог продукции</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">подбор программы</a>
-        </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list navigation-list">
+            <li class="navigation-list__item navigation-list__item--current">
+              <a class="navigation-list__link" href="index.html">главная</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">подбор программы</a>
+          </ul>
+        </div>
+
+        </nav>
       </div>
-      </nav>
     </header>
 
     <main class="main-container">
     <section class="catalog">
-      <h1 class="tittle">Каталог продукции</h1>
-      <ul class="catalog__list">
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="68" height="86" alt="Cat Energy PRO 500 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                500 г
-              </dd>
+      <div class="catalog__wrapper container">
+        <h1 class="tittle">Каталог продукции</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="68" height="86" alt="Cat Energy PRO 500 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    500 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Курица
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Курица
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy PRO 1000 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Курица
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    1000 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                700 ₽
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="68" height="78" alt="Cat Energy PRO 500 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    500 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy PRO 1000 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                1000 г
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy PRO 1000 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Рыба
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    1000 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Курица
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="68" height="78" alt="Cat Energy slim 500 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    500 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    400 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                1000 ₽
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy slim 1000 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy slim 1000 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    1000 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Гречка
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    700 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="68" height="78" alt="Cat Energy PRO 500 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                500 г
-              </dd>
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" src="#" width="72" height="84" alt="Cat Energy slim 500 г.">
+              </a>
+              <a class="catalog-card__link" href="#">
+                <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
+              </a>
+              <dl class="catalog-card__list">
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Масса
+                  </dt>
+                  <dd class="catalog-card__description">
+                    500 г
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Вкус
+                  </dt>
+                  <dd class="catalog-card__description">
+                    Рис
+                  </dd>
+                </div>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__value">
+                    Цена
+                  </dt>
+                  <dd class="catalog-card__description">
+                    500 ₽
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Рыба
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                700 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy PRO 1000 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                1000 г
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Рыба
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                1000 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="68" height="78" alt="Cat Energy slim 500 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                500 г
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Гречка
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                400 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="84" height="100" alt="Cat Energy slim 1000 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy slim 1000 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                1000 г
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Гречка
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                700 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__link" href="#">
-            <img class="catalog-card__img" src="#" width="72" height="84" alt="Cat Energy slim 500 г.">
-          </a>
-          <a class="catalog-card__link" href="#">
-            <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
-          </a>
-          <dl class="catalog-card__list">
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Масса
-              </dt>
-              <dd class="catalog-card__description">
-                500 г
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Вкус
-              </dt>
-              <dd class="catalog-card__description">
-                Рис
-              </dd>
-            </div>
-            <div class="catalog-card__item">
-              <dt class="catalog-card__value">
-                Цена
-              </dt>
-              <dd class="catalog-card__description">
-                500 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="catalog-card__link button" href="#">заказать</a>
-        </li>
-        <li class="catalog__item catalog-card catalog-card--more">
-          <p class="catalog-card__text catalog-card__text--more">Показать еще 100500 товаров</p>
-          <p class="catalog-more__description catalog-more__description--more">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-more__link button button--grey">показать все</a>
-        </li>
-      </ul>
-
+            <a class="catalog-card__link button" href="#">заказать</a>
+          </li>
+          <li class="catalog__item catalog-card catalog-card--more">
+            <p class="catalog-card__text catalog-card__text--more">Показать еще 100500 товаров</p>
+            <p class="catalog-more__description catalog-more__description--more">На самом деле вкусов гораздо больше!</p>
+            <a class="catalog-more__link button button--grey">показать все</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="additionally">
-      <h2 class="additionally__title">Дополнительные товары</h2>
-      <ul class="additionally__list">
-        <li class="additionally__item additionally-card">
-          <h3 class="additionally-card__title">Сахарозаменитель</h3>
-          <dl class="additionally-card__list">
-            <div class="additionally-card__item">
-              <dt class="additionally-card__value">
-                1 упаковка (100 г)
-              </dt>
-              <dd class="additionally-card__description">
-                200 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="additionally__button button" type="button">заказать</a>
-        </li>
-        <li class="additionally__item additionally-card">
-          <h3 class="additionally-card__title">питьевая вода</h3>
-          <dl class="additionally-card__list">
-            <div class="additionally-card__item">
-              <dt class="additionally-card__value">
-                5 литров
-              </dt>
-              <dd class="additionally-card__description">
-                50 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="additionally__button button" type="button">заказать</a>
-        </li>
-        <li class="additionally__item additionally-card">
-          <h3 class="additionally-card__title">молоко</h3>
-          <dl class="additionally-card__list">
-            <div class="additionally-card__item">
-              <dt class="additionally-card__value">
-                1 литр
-              </dt>
-              <dd class="additionally-card__description">
-                100 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="additionally__button button" type="button">заказать</a>
-        </li>
-        <li class="additionally__item additionally-card">
-          <h3 class="additionally-card__title">витамины</h3>
-          <dl class="additionally-card__list">
-            <div class="additionally-card__item">
-              <dt class="additionally-card__value">
-                1 упаковка (30 г)
-              </dt>
-              <dd class="additionally-card__description">
-                300 ₽
-              </dd>
-            </div>
-          </dl>
-          <a class="additionally__button button" type="button">заказать</a>
-        </li>
-      </ul>
+      <div class="additionally__wrapper container">
+        <h2 class="additionally__title">Дополнительные товары</h2>
+        <div class="additionally__wrapper-desk">
+          <ul class="additionally__list">
+            <li class="additionally__item additionally-card">
+              <h3 class="additionally-card__title">Сахарозаменитель</h3>
+              <dl class="additionally-card__list">
+                <div class="additionally-card__item">
+                  <dt class="additionally-card__value">
+                    1 упаковка (100 г)
+                  </dt>
+                  <dd class="additionally-card__description">
+                    200 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a class="additionally__button button" type="button">заказать</a>
+            </li>
+            <li class="additionally__item additionally-card">
+              <h3 class="additionally-card__title">питьевая вода</h3>
+              <dl class="additionally-card__list">
+                <div class="additionally-card__item">
+                  <dt class="additionally-card__value">
+                    5 литров
+                  </dt>
+                  <dd class="additionally-card__description">
+                    50 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a class="additionally__button button" type="button">заказать</a>
+            </li>
+            <li class="additionally__item additionally-card">
+              <h3 class="additionally-card__title">молоко</h3>
+              <dl class="additionally-card__list">
+                <div class="additionally-card__item">
+                  <dt class="additionally-card__value">
+                    1 литр
+                  </dt>
+                  <dd class="additionally-card__description">
+                    100 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a class="additionally__button button" type="button">заказать</a>
+            </li>
+            <li class="additionally__item additionally-card">
+              <h3 class="additionally-card__title">витамины</h3>
+              <dl class="additionally-card__list">
+                <div class="additionally-card__item">
+                  <dt class="additionally-card__value">
+                    1 упаковка (30 г)
+                  </dt>
+                  <dd class="additionally-card__description">
+                    300 ₽
+                  </dd>
+                </div>
+              </dl>
+              <a class="additionally__button button" type="button">заказать</a>
+            </li>
+          </ul>
+
+          <div class="gift gift__wrapper container">
+            <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="gift">
-      <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
+
+
   </main>
 
   <footer class="main-footer">

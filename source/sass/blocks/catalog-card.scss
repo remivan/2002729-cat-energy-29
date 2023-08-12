@@ -15,6 +15,9 @@
 .catalog-card__item {
   font-size: 12px;
   line-height: 16px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-card__text--more {
@@ -26,4 +29,13 @@
 .catalog-more__description--more {
   font-size: 12px;
   line-height: 16px;
+}
+
+.catalog-card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog-card__description {
+  margin: 0;
 }

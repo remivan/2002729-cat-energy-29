@@ -3,4 +3,16 @@
 
 .catalog__list {
   @include list;
+
+  @media (min-width: variables.$width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
