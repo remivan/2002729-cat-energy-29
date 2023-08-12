@@ -1,9 +1,5 @@
 @use "base/variables.scss";
 
-.main-nav {
-
-}
-
 @media (min-width: variables.$width-tablet) {
   .main-nav__toggle {
     display: none;
