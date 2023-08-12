@@ -4,4 +4,14 @@
   font-family: variables.$oswald-font;
   color: variables.$color-black;
   text-transform: uppercase;
+  width: 226px;
+  margin: 37px 0 0 0;
+
+  @media (min-width: variables.$width-tablet) {
+    margin: 65px 0 0 0;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 55px 0 0 0;
+  }
 }

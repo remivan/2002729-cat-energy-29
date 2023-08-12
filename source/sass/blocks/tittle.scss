@@ -18,6 +18,7 @@
     line-height: 60px;
     text-align: left;
     margin: 65px 202px 0 90px;
+    color: variables.$color-black;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -25,9 +26,14 @@
   }
 }
 
+.tittle--form {
+  color: variables.$color-black;
 
-@media (min-width: variables.$width-tablet) {
-  .tittle--index {
-    color: variables.$color-black;
+  @media (min-width: variables.$width-tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding-top: 74px;
   }
 }
