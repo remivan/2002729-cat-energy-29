@@ -69,9 +69,17 @@
   line-height: 26px;
   color: variables.$color-black;
   font-weight: 400;
+  margin: 0;
   display: flex;
   gap: 20px;
 
+  @media (min-width: variables.$width-tablet) {
+    gap: 28px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    gap: 40px;
+  }
 
   &--owner {
     margin-bottom: 35px;
@@ -90,6 +98,14 @@
     height: 15px;
     width: calc(50% - 160px);
     border-bottom: 2px solid variables.$color-green;
+
+    @media (min-width: variables.$width-tablet) {
+      width: calc(50% - 427px);
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      width: calc(50% - 630px);
+    }
   }
 
   &::after {
