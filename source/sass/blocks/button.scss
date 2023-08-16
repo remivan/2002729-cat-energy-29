@@ -7,7 +7,8 @@
   background-color: variables.$color-green;
   color: variables.$color-white;
   text-transform: uppercase;
-  padding: 10px 109px;
+  width: 100%;
+  padding: 10px 10px;
   text-align: center;
   display: block;
 
@@ -15,11 +16,22 @@
   &--small {
     font-size: 14px;
     line-height: 18px;
-    padding: 7px 44px;
   }
 
   &--grey {
     background-color: variables.$color-grey-light;
     color: variables.$color-grey-dark;
+  }
+
+  &--catalog-card {
+    width: 280px;
+
+    @media (min-width: variables.$width-tablet) {
+      width: 250px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      width: 169px;
+    }
   }
 }

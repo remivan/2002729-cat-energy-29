@@ -6,15 +6,21 @@
   padding-top: 41px;
 
   @media (min-width: variables.$width-tablet) {
+    padding: 65px 30px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
-    padding-top: 84px;
+    margin: 0 auto;
   }
 
   @media (min-width: variables.$width-desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1300px;
+    padding: 74px 40px 0;
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
+}
+
+.catalog-card__link {
+  display: block;
 }

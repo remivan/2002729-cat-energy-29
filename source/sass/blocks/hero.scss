@@ -2,9 +2,9 @@
 
 .hero {
   color: variables.$color-white;
-  background-image: url("../img/promo-background.png");
+  background-image: url("../img/promo-background.png"), linear-gradient(rgba(104, 183, 56, 0.85) 64%, variables.$color-white 64%);
   background-repeat: no-repeat;
-
+  background-position: center top;
   padding-top: 27px;
 
   @media (min-width: variables.$width-tablet) {

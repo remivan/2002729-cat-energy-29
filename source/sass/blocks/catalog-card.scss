@@ -3,6 +3,12 @@
 .catalog-card {
   font-size: 16px;
   line-height: 20px;
+  border-top: 1px solid variables.$color-card-border;
+
+  @media (min-width: variables.$width-tablet) {
+    background-image: linear-gradient(variables.$color-white 30%, variables.$color-grey-light 30%);
+    border-top: none;
+  }
 }
 
 .catalog-card__title {
@@ -32,10 +38,19 @@
 }
 
 .catalog-card__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$width-tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 245px;
+  }
 }
 
 .catalog-card__description {
+  text-align: right;
   margin: 0;
 }

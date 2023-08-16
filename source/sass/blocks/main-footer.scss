@@ -1,6 +1,7 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
+
 .main-footer__title {
   font-family: variables.$oswald-font;
   font-size: 16px;
@@ -26,13 +27,16 @@
 .main-footer__cooperation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 26px;
   margin-bottom: 26px;
 
+  &--index {
+    background-color: variables.$color-white;
+  }
+
   @media (min-width: variables.$width-tablet) {
     width: 628px;
-    margin: 60px auto;
+    margin: auto;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -45,6 +49,8 @@
 
 .main-footer__map {
   position: relative;
+  display: block;
+  margin: auto;
 }
 
 .main-footer__logo {
@@ -59,12 +65,6 @@
 
 .main-footer__container {
   background-color: variables.$color-grey-light;
-
-  @media (min-width: variables.$width-tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .main-footer__social {

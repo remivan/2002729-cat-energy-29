@@ -22,6 +22,10 @@
   @media (min-width: variables.$width-tablet) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: variables.$width-desktop) {
+    display: block;
+  }
 }
 
 .form__input {
@@ -30,7 +34,6 @@
   text-transform: uppercase;
   flex-grow: 1;
   margin-left: 13px;
-
 
   &::placeholder {
     opacity: 1;
@@ -52,6 +55,7 @@
   &--textarea {
     min-height: 150px;
     margin: 0;
+    width: 100%;
   }
 
   &--checkbox {
@@ -65,9 +69,11 @@
   line-height: 26px;
   color: variables.$color-black;
   font-weight: 400;
+  display: flex;
+  gap: 20px;
+
 
   &--owner {
-    margin: 0;
     margin-bottom: 35px;
   }
 
@@ -77,6 +83,20 @@
 
   &--additionally {
     margin-bottom: 34px;
+  }
+
+  &::before {
+    content: "";
+    height: 15px;
+    width: calc(50% - 160px);
+    border-bottom: 2px solid variables.$color-green;
+  }
+
+  &::after {
+    content: "";
+    height: 15px;
+    width: 100%;
+    border-bottom: 2px solid variables.$color-green;
   }
 }
 
@@ -106,10 +126,6 @@
 
   &--owner {
     margin-bottom: 24px;
-
-    @media (min-width: variables.$width-desktop) {
-      display: flex;
-    }
   }
 }
 
@@ -118,6 +134,7 @@
   line-height: 20px;
   border: none;
   width: 280px;
+  margin: 0 auto;
 }
 
 .form__legend--additionally-wrapper {
@@ -132,10 +149,40 @@
 }
 
 .form__button-wrapper {
-  display: flex;
+  @media (min-width: variables.$width-tablet) {
+    display: flex;
+  }
 }
 
 .form-wrapper-desk {
-  display: flex;
-  column-gap: 80px;
+  @media (min-width: variables.$width-desktop) {
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__fieldset--desk {
+  @media (min-width: variables.$width-desktop) {
+    width: 570px;
+
+  }
+}
+
+.form__wrapper--owner {
+  @media (min-width: variables.$width-desktop) {
+    display: flex;
+  }
+}
+
+.form__wrapper--additionally {
+  @media (min-width: variables.$width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: flex;
+  }
 }
