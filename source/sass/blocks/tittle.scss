@@ -39,6 +39,10 @@
 
 .tittle--form {
   color: variables.$color-black;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-left: 40px;
+  }
 }
 
 .tittle--catalog {

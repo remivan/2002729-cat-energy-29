@@ -69,20 +69,18 @@
   line-height: 26px;
   color: variables.$color-black;
   font-weight: 400;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-
-  @media (min-width: variables.$width-tablet) {
-    gap: 28px;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    gap: 40px;
-  }
+  background-color: variables.$color-white;
+  padding: 0 20px;
+  margin-left: -20px;
+  display: inline-block;
 
   &--owner {
     margin-bottom: 35px;
+    width: 222px;
+
+    @media (min-width: variables.$width-tablet) {
+      min-width: max-content;
+    }
   }
 
   &--comment {
@@ -91,31 +89,6 @@
 
   &--additionally {
     margin-bottom: 34px;
-  }
-
-  &::before {
-    content: "";
-    height: 15px;
-    display: block;
-    width: calc(50% - 160px);
-    border-bottom: 2px solid variables.$color-green;
-
-    @media (min-width: variables.$width-tablet) {
-      width: calc(50% - 427px);
-    }
-
-    @media (min-width: variables.$width-desktop) {
-      width: calc(50% - 650px);
-    }
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    height: 15px;
-    width: 160px;
-    flex-grow: 1;
-    border-bottom: 2px solid variables.$color-green;
   }
 }
 
