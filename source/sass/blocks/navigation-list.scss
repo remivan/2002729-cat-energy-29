@@ -4,6 +4,20 @@
 .navigation-list {
   @include list;
   font-family: variables.$oswald-font;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 436px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: flex;
+    width: 475px;
+  }
 }
 
 .navigation-list__link {

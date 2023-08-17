@@ -1,20 +1,73 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
+
 .main-footer__title {
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 20px;
   color: variables.$color-black-light;
   text-transform: uppercase;
+  width: 140px;
+  margin: 0;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .main-footer__address {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
 }
 
-.main-footer__wrapper {
+.main-footer__cooperation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+  margin-bottom: 26px;
+
+  &--index {
+    background-color: variables.$color-white;
+  }
+
+  @media (min-width: variables.$width-tablet) {
+    width: 628px;
+    margin: auto;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 565px;
+    background-color: variables.$color-white;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.main-footer__map {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.main-footer__logo {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+
+  @media (min-width: variables.$width-tablet) {
+    padding: 0;
+  }
+}
+
+.main-footer__container {
   background-color: variables.$color-grey-light;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: space-between;
 }

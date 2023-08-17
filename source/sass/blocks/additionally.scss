@@ -12,3 +12,11 @@
 .additionally__list {
   @include list;
 }
+
+.additionally__wrapper-desk {
+  @media (min-width: variables.$width-desktop) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 80px;
+  }
+}

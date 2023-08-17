@@ -1,0 +1,14 @@
+@use "base/variables.scss";
+
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid variables.$color-green;
+    width: 100%;
+    top: 35px;
+    z-index: -1;
+  }
+}

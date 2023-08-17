@@ -1,0 +1,19 @@
+@use "base/variables.scss";
+
+.logo__logo-image {
+  @media (min-width: variables.$width-tablet) {
+    height: 50px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    height: 59px;
+  }
+}
+
+.logo__logo-text {
+  margin-left: 30px;
+
+  @media (min-width: variables.$width-desktop) {
+    height: 21px;
+  }
+}

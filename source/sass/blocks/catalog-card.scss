@@ -3,6 +3,12 @@
 .catalog-card {
   font-size: 16px;
   line-height: 20px;
+  border-top: 1px solid variables.$color-card-border;
+
+  @media (min-width: variables.$width-tablet) {
+    background-image: linear-gradient(variables.$color-white 30%, variables.$color-grey-light 30%);
+    border-top: none;
+  }
 }
 
 .catalog-card__title {
@@ -15,6 +21,9 @@
 .catalog-card__item {
   font-size: 12px;
   line-height: 16px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-card__text--more {
@@ -26,4 +35,22 @@
 .catalog-more__description--more {
   font-size: 12px;
   line-height: 16px;
+}
+
+.catalog-card__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$width-tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 245px;
+  }
+}
+
+.catalog-card__description {
+  text-align: right;
+  margin: 0;
 }

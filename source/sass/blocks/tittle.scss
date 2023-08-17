@@ -4,10 +4,48 @@
   font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 36px;
-  color: variables.$color-black;
+  color: variables.$color-white;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding-top: 74px;
+  }
 }
 
-.tittle--white {
-  color: variables.$color-white;
+.tittle--index {
+  text-align: center;
+
+  padding-top: 41px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 202px 0 90px;
+    color: variables.$color-black;
+    padding-top: 80px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 0 720px 0 80px;
+    padding-top: 110px;
+  }
+}
+
+.tittle--form {
+  color: variables.$color-black;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-left: 40px;
+  }
+}
+
+.tittle--catalog {
+  color: variables.$color-black;
+  padding-top: 42px;
 }
