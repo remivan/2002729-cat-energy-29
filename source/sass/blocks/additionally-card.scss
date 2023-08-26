@@ -1,6 +1,9 @@
 @use "base/variables.scss";
 
 .additionally-card {
+  border-top: 1px solid #cdcdcd;
+  margin-bottom: 19px;
+
   @media (min-width: variables.$width-desktop) {
     display: flex;
     justify-content: space-between;

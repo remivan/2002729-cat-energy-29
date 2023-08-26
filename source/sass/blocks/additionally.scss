@@ -11,6 +11,8 @@
 
 .additionally__list {
   @include list;
+
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additionally__wrapper-desk {

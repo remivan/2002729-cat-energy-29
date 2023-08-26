@@ -83,7 +83,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 11px;
+      bottom: 16px;
       left: 0;
       height: 2px;
       background: variables.$color-green;
@@ -95,7 +95,21 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 11px;
+      bottom: 16px;
+      left: 0;
+      height: 2px;
+      background: variables.$color-green;
+    }
+  }
+}
+
+.navigation-list__item--current-desk {
+  @media (min-width: variables.$width-desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 16px;
       left: 0;
       height: 2px;
       background: variables.$color-white;

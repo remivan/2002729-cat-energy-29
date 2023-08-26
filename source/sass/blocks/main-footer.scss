@@ -38,7 +38,6 @@
 .main-footer__cooperation {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 
   &--index {
     background-color: variables.$color-white;
@@ -47,6 +46,7 @@
   @media (min-width: variables.$width-tablet) {
     padding: 61px 40px;
     width: 628px;
+    justify-content: space-between;
   }
 
   @media (min-width: variables.$width-desktop) {
