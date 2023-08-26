@@ -17,6 +17,7 @@
   font-weight: 400;
   color: variables.$color-black-lighter;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .catalog-card__item {
@@ -25,6 +26,11 @@
   width: 140px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: variables.$width-tablet) {
+    border-bottom: 1px solid #cdcdcd;
+    width: 250px;
+  }
 }
 
 .catalog-card__wrapper--more {
@@ -81,6 +87,9 @@
 
   @media (min-width: variables.$width-tablet) {
     width: 324px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
   }
 
   @media (min-width: variables.$width-desktop) {
