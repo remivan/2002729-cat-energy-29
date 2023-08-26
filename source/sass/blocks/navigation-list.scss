@@ -56,7 +56,12 @@
     font-size: 20px;
     line-height: 30px;
     background-color: transparent;
-    color: variables.$color-white;
+  }
+
+  &--main-desk {
+    @media (min-width: variables.$width-desktop) {
+      color: variables.$color-white;
+    }
   }
 }
 

@@ -15,4 +15,21 @@
     width: 1300px;
     padding: 0 40px;
   }
+
+  &--form {
+    @media (min-width: variables.$width-tablet) {
+      padding: 0 70px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      padding: 0 40px;
+    }
+  }
+
+  &--footer-desk {
+    @media (min-width: variables.$width-desktop) {
+      width: 565px;
+      padding: 60px 80px;
+    }
+  }
 }
