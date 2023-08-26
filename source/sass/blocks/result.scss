@@ -1,16 +1,46 @@
 @use "base/variables.scss";
+@use "base/mixins.scss" as *;
 
 .result {
+  @include list;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 30px;
+
+  @media (min-width: variables.$width-tablet) {
+    width: 367px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.result__item {
+  position: relative;
   width: 124px;
   text-align: center;
+  vertical-align: middle;
+
+
+  @media (min-width: variables.$width-tablet) {
+    width: 162px;
+  }
 }
 
 .result__value {
+  display: block;
   font-family: variables.$oswald-font;
   font-size: 24px;
   line-height: 24px;
   color: variables.$color-black;
   font-weight: 400;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px 17px;
+
 
   @media (min-width: variables.$width-tablet) {
     font-size: 30px;
@@ -19,6 +49,36 @@
 }
 
 .result__description {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
+  background-color: variables.$color-background-grey;
+  padding: 0 5px;
+  top: 31px;
+  left: 26px;
+  width: 70px;
+  z-index: 2;
+
+  @media (min-width: variables.$width-tablet) {
+    background-color: variables.$color-white;
+    top: 44px;
+    left: 45px;
+    gap: 43px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    background-color: variables.$color-background-grey;
+  }
+}
+
+.example__description br {
+  display: none;
+
+  @media (min-width: variables.$width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: none;
+  }
 }

@@ -1,41 +1,115 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
+.advantages {
+  padding-bottom: 49px;
+}
+
 .advantages__title {
   font-family: variables.$oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: variables.$color-black;
   font-weight: 400;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
 }
 
 .advantages__list {
   @include list;
   margin-top: 40px;
   display: grid;
+  counter-reset: section;
 
   @media (min-width: variables.$width-tablet) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 137px;
     row-gap: 37px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     gap: 80px;
   }
 }
 
 .advantages__item {
+  position: relative;
   margin-left: 80px;
 
-  @media (min-width: variables.$width-tablet) {
-    margin-left: 0;
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 
-  @media (min-width: variables.$width-desktop) {
+  @media (min-width: variables.$width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
     margin-left: 0;
+    padding: 151px 26px 57px 0;
+
+
+    &::after {
+      position: absolute;
+      font-family: variables.$oswald-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: variables.$color-grey-light;
+      left: 141px;
+      top: 39px;
+      height: 280px;
+      counter-increment: section;
+      content: counter(section);
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -77px;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 75px;
+      left: 0;
+    }
+  }
+
+  &--sheet::before {
+    background-image: url("../img/icon-sheet.svg"), linear-gradient(variables.$color-green, variables.$color-green);
+  }
+
+  &--powder::before {
+    background-image: url("../img/icon-powder.svg"), linear-gradient(variables.$color-green, variables.$color-green);
+  }
+
+  &--eat::before {
+    background-image: url("../img/icon-eat.svg"), linear-gradient(variables.$color-green, variables.$color-green);
+  }
+
+  &--time::before {
+    background-image: url("../img/icon-time.svg"), linear-gradient(variables.$color-green, variables.$color-green);
+  }
+}
+
+.advantages__item br {
+  @media (min-width: variables.$width-tablet) {
+    display: none;
   }
 }

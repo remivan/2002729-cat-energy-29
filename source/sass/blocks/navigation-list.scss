@@ -5,17 +5,24 @@
   @include list;
   font-family: variables.$oswald-font;
 
+
   @media (min-width: variables.$width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 436px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
     font-size: 18px;
     line-height: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 436px;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    display: flex;
     width: 475px;
   }
 }
@@ -31,7 +38,62 @@
   padding-top: 22px;
   padding-bottom: 24px;
   background-color: variables.$color-white;
-  border-top: 1px solid variables.$color-card-border;
-  border-bottom: 1px solid variables.$color-card-border;
+
+  @media (max-width: variables.$width-mobi-only) {
+    border-top: 1px solid variables.$color-card-border;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: transparent;
+    color: variables.$color-white;
+  }
 }
 
+@media (max-width: variables.$width-mobi-only) {
+  .main-nav--closed .navigation-list {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.navigation-list__item--current {
+  position: relative;
+
+  @media (min-width: variables.$width-tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 11px;
+      left: 0;
+      height: 2px;
+      background: variables.$color-green;
+    }
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 11px;
+      left: 0;
+      height: 2px;
+      background: variables.$color-white;
+    }
+  }
+}

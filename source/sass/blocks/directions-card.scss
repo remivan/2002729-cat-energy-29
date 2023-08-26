@@ -23,46 +23,114 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 90px;
+  padding-left: 90px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 53px;
+    padding-left: 53px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    margin-left: 214px;
+    padding-left: 214px;
   }
 }
 
 .directions-card__link {
+  position: relative;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: variables.$color-black;
-  margin-top: 38px;
+  display: block;
 
   @media (min-width: variables.$width-tablet) {
-    margin-top: 48px;
-    margin-left: 52px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  @media (min-width: variables.$width-desktop) {
-    margin-top: 27px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 24px;
+    height: 16px;
+    top: 0;
+    left: 105px;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 7px;
+      left: 190px;
+    }
   }
 }
 
 .directions-card__description {
-  margin-top: 20px;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+
+  @media (max-width: variables.$width-mobi-only) {
+    border-bottom: 1px solid variables.$color-border;
+  }
 
   @media (min-width: variables.$width-tablet) {
     margin-top: 24px;
     margin-left: 52px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: variables.$width-desktop) {
     margin-top: 73px;
+  }
+}
+
+.directions-list__item {
+  position: relative;
+
+  &--slim::before {
+    content: "";
+    width: 50px;
+    height: 54px;
+    position: absolute;
+    background-image: url("../img/cat-slim.png");
+    background-repeat: no-repeat;
+    top: 22px;
+    left: 20px;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 71px;
+      left: 515px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      top: 71px;
+      left: 100px;
+    }
+  }
+
+  &--weight::before {
+    content: "";
+    width: 68px;
+    height: 54px;
+    position: absolute;
+    background-image: url("../img/cat-weight.png");
+    background-repeat: no-repeat;
+    top: 22px;
+    left: 20px;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 71px;
+      left: 515px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      top: 71px;
+      left: 100px;
+    }
   }
 }

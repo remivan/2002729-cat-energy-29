@@ -7,7 +7,6 @@
   background-color: variables.$color-green;
   color: variables.$color-white;
   text-transform: uppercase;
-  width: 100%;
   padding: 10px 10px;
   text-align: center;
   display: block;
@@ -16,6 +15,11 @@
   &--small {
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: variables.$width-tablet) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &--grey {
