@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   border-top: 1px solid #cdcdcd;
   text-align: center;
+  height: 294px;
+
+  @media (min-width: variables.$width-tablet) {
+    background-image: url("../img/gift-background-tablet.png");
+    height: 200px;
+  }
 
   &::before {
     position: absolute;
@@ -23,7 +29,12 @@
 .gift__text {
   font-size: 16px;
   line-height: 20px;
-  padding: 186px 62px 43px 58px;
   margin: 0;
+  padding: 186px 62px 43px 58px;
   color: variables.$color-white;
+
+  @media (min-width: variables.$width-tablet) {
+    margin: 30px 111px 0 194px;
+    padding: 47px 35px 1px 212px;
+  }
 }

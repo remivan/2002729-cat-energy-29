@@ -7,6 +7,10 @@
   line-height: 24px;
   color: variables.$color-black;
   font-weight: 400;
+  background-color: variables.$color-white;
+  display: inline-block;
+  padding: 0 20px;
+  margin-left: -20px;
 }
 
 .additionally__list {

@@ -11,4 +11,14 @@
     top: 35px;
     z-index: -1;
   }
+
+  &--additionally::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid variables.$color-green;
+    width: 100%;
+    top: 15px;
+    z-index: -1;
+  }
 }
+

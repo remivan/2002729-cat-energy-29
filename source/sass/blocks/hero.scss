@@ -1,9 +1,8 @@
 @use "base/variables.scss";
 
 .hero {
-  position: relative;
   color: variables.$color-white;
-  background-image: url("../img/promo-background.png"), linear-gradient(to bottom, #63a63a 53%, #ffffff 53%);
+  background-image: url("../img/promo-background.png"), linear-gradient(to bottom, #64a83d 53%, #ffffff 53%);
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 27px;
@@ -18,7 +17,7 @@
   }
 
   @media (min-width: variables.$width-desktop) {
-    background-image: url("../img/index-background-desktop.png"), linear-gradient(to right, #ffffff 50%, #63a63a 50%);
+    background-image: url("../img/index-background-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
     background-position: top right;
     margin-bottom: 82px;
   }
@@ -60,4 +59,8 @@
     width: 244px;
     margin: 50px 0 0 90px;
   }
+}
+
+.hero__wrapper {
+  position: relative;
 }

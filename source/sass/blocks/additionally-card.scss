@@ -10,6 +10,17 @@
   }
 }
 
+.additionally-card__wrapper {
+  @media (min-width: variables.$width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 566px;
+  }
+}
+
 .additionally-card__title {
   font-family: variables.$oswald-font;
   font-size: 16px;
@@ -24,8 +35,20 @@
   line-height: 14px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: variables.$width-tablet) {
+    display: grid;
+    grid-template-columns: 235px 91px;
+    justify-items: right;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    justify-items: left;
+  }
 }
 
-.additionally-card__description {
-  margin: 0;
+.additionally__button {
+  @media (min-width: variables.$width-desktop) {
+    width: 244px;
+  }
 }
