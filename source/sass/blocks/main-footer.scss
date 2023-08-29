@@ -1,10 +1,6 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
-.main-footer {
-  position: relative;
-}
-
 .main-footer__title {
   font-family: variables.$oswald-font;
   font-size: 16px;
@@ -36,9 +32,6 @@
 }
 
 .main-footer__cooperation {
-  display: flex;
-  justify-content: space-between;
-
   &--index {
     background-color: variables.$color-white;
   }
@@ -50,18 +43,25 @@
   }
 
   @media (min-width: variables.$width-desktop) {
-    width: 565px;
-    background-color: variables.$color-white;
-    position: absolute;
-    z-index: 1;
-    top: 91px;
-    left: 113px;
+    position: relative;
   }
 }
 
 .main-footer__cooperation-wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 26px 0;
-  background-color: variables.$color-grey-light;
+  background-color: variables.$color-white;
+
+  @media (min-width: variables.$width-desktop) {
+    position: absolute;
+    background-color: variables.$color-white;
+    width: 565px;
+    z-index: 1;
+    top: 110px;
+    left: 50px;
+    padding: 60px 80px;
+  }
 }
 
 .main-footer__map {
