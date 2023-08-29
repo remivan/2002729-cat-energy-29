@@ -19,7 +19,6 @@
 
 .tittle--index {
   text-align: center;
-
   padding-top: 41px;
 
   @media (min-width: variables.$width-tablet) {
@@ -33,7 +32,7 @@
 
   @media (min-width: variables.$width-desktop) {
     margin: 0 720px 0 80px;
-    padding-top: 310px;
+    padding-top: 224px;
   }
 }
 
@@ -57,5 +56,4 @@
 
 .tittle--catalog {
   color: variables.$color-black;
-  padding-top: 42px;
 }

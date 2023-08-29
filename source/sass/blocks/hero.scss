@@ -8,10 +8,15 @@
   padding-top: 27px;
   padding-bottom: 52px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background@2x.png");
+    background-size: 320px auto;
+  }
+
 
   @media (min-width: variables.$width-tablet) {
     padding-top: 0;
-    padding-bottom: 106px;
+    padding-bottom: 487px;
     background-image: none;
     color: variables.$color-black;
   }
@@ -20,6 +25,12 @@
     background-image: url("../img/index-background-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
     background-position: top right;
     margin-bottom: 82px;
+    padding-bottom: 187px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background@2x.png.png");
+      background-size: 720px auto;
+    }
   }
 }
 
@@ -43,14 +54,14 @@
   @media (min-width: variables.$width-tablet) {
     position: absolute;
     z-index: -1;
-    top: 230px;
-    right: 222px;
+    top: 252px;
+    right: 21px;
   }
 
   @media (min-width: variables.$width-desktop) {
     z-index: 2;
-    top: 364px;
-    right: 423px;
+    top: 110px;
+    right: 265px;
   }
 }
 

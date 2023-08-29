@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png">
+
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -12,12 +15,18 @@
         <div class="main-header__wrapper container">
 
           <a class="main-header__logo logo" href="#">
-            <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-            <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="50">
+                <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-mobile-text-tablet.svg">
+                <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+              </picture>
           </a>
 
         </div>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__span"></span>
@@ -43,7 +52,11 @@
         <div class="hero__wrapper container">
           <h1 class="tittle tittle--index">Функциональное питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
-          <img class="hero__img"  src="img/cat-energy-pot.png" width="280" height="270" alt="Внешний вид питания Cat Energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/cat-energy-pot-desk.png 1x, img/cat-energy-pot-desk@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/cat-energy-pot-tablet.png 1x, img/cat-energy-pot-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__img" src="img/cat-energy-pot.png" srcset="img/cat-energy-pot@2x.png 2x" width="280" height="270" alt="Внешний вид питания Cat Energy.">
+          </picture>
           <a class="hero__button button button--small" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -109,8 +122,14 @@
           </div>
 
           <div class="slider">
-            <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Кот до похудения.">
-            <img class="slider__image" src="img/cat-after.png" width="280" height="256" alt="Кот после похудения.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="280" height="256" alt="Кот до похудения.">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="280" height="256" alt="Кот после похудения.">
+            </picture>
             <button class="slider__button-toggle" type="button"><span class="visually-hidden">Сравнить кота до похудения и после.</span></button>
           </div>
         </div>
