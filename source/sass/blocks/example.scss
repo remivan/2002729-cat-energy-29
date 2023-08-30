@@ -91,6 +91,7 @@
   @media (min-width: variables.$width-tablet) {
     display: flex;
     align-items: center;
+    margin-bottom: 99px;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -102,8 +103,8 @@
 
 .example__wrapper {
   @media (min-width: variables.$width-desktop) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 560px;
   }
 }
 

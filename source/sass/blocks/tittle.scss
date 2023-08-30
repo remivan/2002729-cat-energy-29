@@ -56,4 +56,13 @@
 
 .tittle--catalog {
   color: variables.$color-black;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 54px 0;
+  }
 }

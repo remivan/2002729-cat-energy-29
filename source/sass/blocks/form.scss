@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -53,6 +54,11 @@
   }
 }
 
+.form__label svg {
+  position: absolute;
+  right: 13px;
+}
+
 .form__input {
   font-family: variables.$oswald-font;
   font-size: 16px;
@@ -81,9 +87,6 @@
   }
 
   &--email {
-    background-image: url("../img/icon-email.svg");
-    background-repeat: no-repeat;
-    background-position: 183px 14px;
     padding-right: 41px;
 
     @media (min-width: variables.$width-desktop) {
@@ -92,9 +95,6 @@
   }
 
   &--phone {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 165px 14px;
     padding-right: 41px;
 
     @media (min-width: variables.$width-desktop) {

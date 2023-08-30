@@ -1,0 +1,80 @@
+@use "base/variables.scss";
+@use "base/mixins.scss" as *;
+
+.slider {
+  height: 256px;
+  width: 280px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media (min-width: variables.$width-tablet) {
+    height: 512px;
+    width: 560px;
+  }
+}
+
+.slider__before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  background-color: variables.$color-background-grey;
+  z-index: 1;
+
+
+  @media (min-width: variables.$width-tablet) {
+    background-image: linear-gradient(variables.$color-white 123px, variables.$color-background-grey 123px);
+  }
+
+  @media (min-width: variables.$width-tablet) {
+    background-image: linear-gradient(variables.$color-white 131px, variables.$color-background-grey 131px);
+  }
+}
+
+.slider__image--before {
+  max-width: none;
+}
+
+.slider__wrap {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 98px;
+  left: 119px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: variables.$color-white;
+  text-align: center;
+  padding: 0;
+  z-index: 3;
+
+  @media (min-width: variables.$width-tablet) {
+    top: 218px;
+    left: 261px;
+  }
+}
+
+.slider__button-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 254px;
+    background-color: #666666;
+    border-radius: 2px;
+    z-index: 1;
+    top: 0;
+    left: 137px;
+
+    @media (min-width: variables.$width-tablet) {
+      height: 505px;
+      left: 279px;
+    }
+  }
+}
+
+.slider__arrow {
+  transform: translate(0%, 50%);
+}

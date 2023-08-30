@@ -10,14 +10,19 @@
     <header class="main-header">
       <div class="header__container">
         <div class="main-header__wrapper container">
-
           <a class="main-header__logo logo" href="#">
-            <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-            <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="50">
+                <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-mobile-text-tablet.svg">
+                <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+              </picture>
           </a>
 
         </div>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__span"></span>
@@ -30,8 +35,8 @@
               <li class="navigation-list__item">
                 <a class="navigation-list__link" href="catalog.html">каталог продукции</a>
               </li>
-              <li class="navigation-list__item">
-                <a class="navigation-list__link navigation-list__item--current" href="form.html">подбор программы</a>
+              <li class="navigation-list__item navigation-list__item--current">
+                <a class="navigation-list__link" href="#">подбор программы</a>
             </ul>
 
         </nav>
@@ -91,9 +96,15 @@
             <div class="form__wrapper form__wrapper--owner container container--form">
               <label class="form__label form__label--desk">E-mail:*
                 <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.500336 5.5V13.5H17.5041V5.5M0.500336 0.5H17.5041V2.5L9.00223 8.5L0.500336 2.5V0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </label>
               <label class="form__label form__label--desk">Телефон:*
                 <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </label>
             </div>
           </div>
@@ -147,15 +158,15 @@
     </main>
     <footer class="main-footer">
 
-      <div class="main-footer__cooperation-wrapper">
-        <div class="container container--form container--footer-desk main-footer__cooperation">
+      <div class="container container--form main-footer__cooperation">
+        <div class="main-footer__cooperation-wrapper">
           <p class="main-footer__title">приглашаем к сотрудничеству дилеров!</p>
           <address class="main-footer__address adress">
             <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="address__city">Санкт-Петербург</p>
           </address>
         </div>
-    </div>
+      </div>
 
       <div class="main-footer__map-container">
         <iframe class="main-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247761802!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1693029198412!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
