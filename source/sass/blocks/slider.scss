@@ -25,10 +25,10 @@
 
 
   @media (min-width: variables.$width-tablet) {
-    background-image: linear-gradient(variables.$color-white 123px, variables.$color-background-grey 123px);
+    background-image: linear-gradient(variables.$color-white 122px, variables.$color-background-grey 122px);
   }
 
-  @media (min-width: variables.$width-tablet) {
+  @media (min-width: variables.$width-desktop) {
     background-image: linear-gradient(variables.$color-white 131px, variables.$color-background-grey 131px);
   }
 }
@@ -49,6 +49,15 @@
   text-align: center;
   padding: 0;
   z-index: 3;
+
+  &:hover {
+    border: 2px solid variables.$color-green;
+  }
+
+  &:active {
+    border: 2px solid variables.$color-green;
+    opacity: 0.6;
+  }
 
   @media (min-width: variables.$width-tablet) {
     top: 218px;
@@ -75,6 +84,29 @@
   }
 }
 
+.slider__button-toggle:hover {
+  &::before {
+    background-color: variables.$color-green;
+  }
+}
+
+.slider__button-toggle:active {
+  &::before {
+    background-color: variables.$color-green;
+    opacity: 0.6;
+  }
+}
+
 .slider__arrow {
   transform: translate(0%, 50%);
+  fill: #666666;
+}
+
+.slider__button-toggle:hover .slider__arrow {
+  fill: variables.$color-green;
+}
+
+.slider__button-toggle:active .slider__arrow {
+  fill: variables.$color-green;
+  opacity: 0.6;
 }

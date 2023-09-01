@@ -16,21 +16,6 @@
   }
 }
 
-.main-footer__address {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  width: 140px;
-
-  @media (min-width: variables.$width-tablet) {
-    text-align: right;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    text-align: left;
-  }
-}
-
 .main-footer__cooperation {
   &--index {
     background-color: variables.$color-white;

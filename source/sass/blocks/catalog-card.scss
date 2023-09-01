@@ -8,6 +8,7 @@
 
   @media (min-width: variables.$width-tablet) {
     border-top: none;
+    padding: 0;
   }
 }
 
@@ -21,6 +22,21 @@
   @media (min-width: variables.$width-tablet) {
     text-align: center;
     width: 130px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.catalog-card__list {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin-bottom: 37px;
   }
 }
 
@@ -36,9 +52,11 @@
     width: 250px;
     padding-bottom: 5px;
     margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  @media (min-width: variables.$width-tablet) {
+  @media (min-width: variables.$width-desktop) {
     border-bottom: 1px solid #cdcdcd;
     width: 169px;
     padding-bottom: 5px;
@@ -52,24 +70,51 @@
   padding-top: 78px;
 
   @media (min-width: variables.$width-tablet) {
-    padding: 154px 0 40px;
+    height: 429px;
+    padding: 160px 0 40px;
     border: 1px solid variables.$color-card-border;
   }
 
-  @media (min-width: variables.$width-tablet) {
-    padding: 146px 21px 40px;
-    border: 1px solid variables.$color-card-border;
+  @media (min-width: variables.$width-desktop) {
+    height: 431px;
+    padding: 166px 0 40px;
   }
 }
 
 .catalog-card--more {
   position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: variables.$width-tablet) {
+    margin: 0 auto;
+    width: 324px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 245px;
+  }
 }
 
 .catalog-card__text--more {
   font-family: variables.$oswald-font;
   color: variables.$color-black-light;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 80px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding: 0 40px;
+    margin-bottom: 26px;
+  }
 
   &::before {
     position: absolute;
@@ -83,11 +128,12 @@
 
     @media (min-width: variables.$width-tablet) {
       width: 60px;
-      top: 100px;
+      top: 174px;
+      left: 132px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 119px;
+      top: 217px;
       left: 96px;
     }
   }
@@ -104,11 +150,12 @@
 
     @media (min-width: variables.$width-tablet) {
       width: 60px;
-      top: 100px;
+      top: 174px;
+      left: 132px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 119px;
+      top: 217px;
       left: 96px;
     }
   }
@@ -117,8 +164,21 @@
 .catalog-card__description--more {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
   margin-bottom: 21px;
   text-align: center;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 70px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding: 0 30px;
+    margin-bottom: 90px;
+  }
 }
 
 .catalog-card__wrapper {
@@ -132,13 +192,21 @@
   @media (min-width: variables.$width-tablet) {
     width: 324px;
     justify-content: center;
-    background-image: linear-gradient(variables.$color-white 30%, variables.$color-grey-light 30%);
-    padding: 0 37px 54px;
+    background-image: linear-gradient(variables.$color-white 15%, variables.$color-grey-light 15%);
+    padding: 10px 37px 40px;
   }
 
   @media (min-width: variables.$width-desktop) {
     width: 245px;
-    padding: 40px 38px;
+    padding: 10px 38px 40px;
+  }
+}
+
+.catalog-card__wrapper-text {
+  @media (min-width: variables.$width-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -153,13 +221,18 @@
 
 .catalog-card__link {
   display: block;
-  margin: 0 auto;
 
   &--title {
     width: 96px;
+    margin-bottom: 14px;
 
     @media (min-width: variables.$width-tablet) {
       width: 135px;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      margin-bottom: 23px;
     }
   }
 
@@ -175,5 +248,27 @@
     @media (min-width: variables.$width-desktop) {
       width: 169px;
     }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
+
+  &--img {
+    @media (min-width: variables.$width-tablet) {
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.catalog-card__img {
+  display: block;
 }

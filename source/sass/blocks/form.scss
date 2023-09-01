@@ -3,6 +3,11 @@
 
 .form {
   font-size: 16px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label {
@@ -104,6 +109,12 @@
 
   @media (min-width: variables.$width-tablet) {
     height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
   }
 }
 
@@ -122,7 +133,7 @@
   }
 }
 
-.form__radio:checked + .form__radio-mark::before {
+.form__radio-input:checked + .form__radio-mark::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -139,6 +150,15 @@
   }
 }
 
+.form__radio-input:hover[type="radio"] + .form__radio-mark {
+  border: 1px solid #bababa;
+}
+
+.form__radio-input:disabled[type="radio"] + .form__radio-mark,
+.form__radio-input:disabled[type="radio"] ~ .form__radio-text {
+  opacity: 0.3;
+}
+
 .form__legend {
   font-family: variables.$oswald-font;
   font-size: 24px;
@@ -149,6 +169,11 @@
   padding: 0 20px;
   margin-left: -20px;
   display: inline-block;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &--owner {
     margin-bottom: 35px;
@@ -276,7 +301,7 @@
   margin-right: 10px;
 }
 
-.form__checkbox:checked + .form__checkbox-mark::before {
+.form__checkbox-input:checked + .form__checkbox-mark::before {
   position: absolute;
   content: "";
   top: 15px;
@@ -287,7 +312,7 @@
   transform: rotate(45deg);
 }
 
-.form__checkbox:checked + .form__checkbox-mark::after {
+.form__checkbox-input:checked + .form__checkbox-mark::after {
   position: absolute;
   content: "";
   top: 13px;
@@ -298,7 +323,16 @@
   transform: rotate(-45deg);
 }
 
-.form__wrapper--radio {
+.form__checkbox-input:hover[type="checkbox"] + .form__checkbox-mark {
+  border: 1px solid #bababa;
+}
+
+.form__checkbox-input:disabled[type="checkbox"] + .form__checkbox-mark,
+.form__checkbox-input:disabled[type="checkbox"] ~ .form__checkbox-text {
+  opacity: 0.3;
+}
+
+.form__radio {
   @media (min-width: variables.$width-tablet) {
     border: 1px solid #e7e7e7;
     padding: 23px 0 27px 27px;

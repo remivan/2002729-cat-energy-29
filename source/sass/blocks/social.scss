@@ -20,3 +20,16 @@
     margin-bottom: 0;
   }
 }
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon {
+  fill: variables.$color-green;
+}
+
+.social__link:active .social__icon {
+  fill: variables.$color-green;
+  opacity: 0.3;
+}

@@ -9,6 +9,11 @@ body {
   color: variables.$color-grey-dark;
   min-width: 320px;
   position: relative;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 img {

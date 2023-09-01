@@ -22,7 +22,6 @@
   position: relative;
   width: 124px;
   text-align: center;
-  vertical-align: middle;
 
 
   @media (min-width: variables.$width-tablet) {
@@ -53,21 +52,32 @@
   font-size: 12px;
   line-height: 12px;
   background-color: variables.$color-background-grey;
-  padding: 0 5px;
-  top: 31px;
-  left: 26px;
+  padding: 0 8px;
+  margin: 0 auto;
+  top: 44px;
+  left: 27px;
   width: 70px;
   z-index: 2;
 
   @media (min-width: variables.$width-tablet) {
+    font-size: 14px;
+    line-height: 14px;
     background-color: variables.$color-white;
-    top: 44px;
-    left: 45px;
-    gap: 43px;
+    top: 58px;
+    left: 13px;
+    padding: 0 8px;
+    width: 142px;
   }
 
   @media (min-width: variables.$width-desktop) {
     background-color: variables.$color-background-grey;
+  }
+
+  &--weight {
+    @media (min-width: variables.$width-tablet) {
+      width: 117px;
+      transform: translate(11%, 10%);
+    }
   }
 }
 

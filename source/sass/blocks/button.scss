@@ -21,11 +21,6 @@
     }
   }
 
-  &--grey {
-    background-color: variables.$color-grey-light;
-    color: variables.$color-grey-dark;
-  }
-
   &--catalog-card {
     width: 280px;
 
@@ -36,5 +31,28 @@
     @media (min-width: variables.$width-desktop) {
       width: 169px;
     }
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--grey {
+  background-color: variables.$color-grey-light;
+  color: variables.$color-grey-dark;
+
+  &:hover {
+    background-color: variables.$color-card-border;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: variables.$color-card-border;
+    color: variables.$color-grey-dark;
   }
 }
