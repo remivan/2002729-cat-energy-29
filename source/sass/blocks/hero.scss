@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 27px;
-  padding-bottom: 52px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-background@2x.png"), linear-gradient(to bottom, #64a83d 100%, #ffffff 100%);
@@ -27,7 +26,7 @@
     padding-bottom: 187px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-background@2x.png.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
+      background-image: url("../img/promo-background@2x.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
       background-size: auto 694px;
     }
   }
@@ -48,6 +47,7 @@
 }
 
 .hero__img {
+  display: block;
   padding-top: 29px;
 
   @media (min-width: variables.$width-tablet) {
