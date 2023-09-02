@@ -50,9 +50,7 @@
   padding: 0;
   z-index: 3;
 
-  &:hover {
-    border: 2px solid variables.$color-green;
-  }
+
 
   &:active {
     border: 2px solid variables.$color-green;
@@ -61,38 +59,41 @@
 
   @media (min-width: variables.$width-tablet) {
     top: 218px;
-    left: 261px;
+    left: -17px;
   }
 }
 
 .slider__button-toggle {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 4px;
-    height: 254px;
-    background-color: #666666;
-    border-radius: 2px;
-    z-index: 1;
-    top: 0;
-    left: 137px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 4px;
+  height: 254px;
+  background-color: #666666;
+  border-radius: 2px;
+  z-index: 1;
+  border: 0;
+  left: 137px;
 
-    @media (min-width: variables.$width-tablet) {
-      height: 505px;
-      left: 279px;
-    }
+  @media (min-width: variables.$width-tablet) {
+    height: 505px;
+    left: 279px;
   }
-}
 
-.slider__button-toggle:hover {
-  &::before {
+  &:hover {
     background-color: variables.$color-green;
   }
-}
 
-.slider__button-toggle:active {
-  &::before {
-    background-color: variables.$color-green;
+  &:hover .slider__arrow {
+    fill: variables.$color-green;
+  }
+
+  &:hover .slider__wrap {
+    border: 2px solid variables.$color-green;
+  }
+
+  &:active {
     opacity: 0.6;
   }
 }
@@ -100,13 +101,4 @@
 .slider__arrow {
   transform: translate(0%, 50%);
   fill: #666666;
-}
-
-.slider__button-toggle:hover .slider__arrow {
-  fill: variables.$color-green;
-}
-
-.slider__button-toggle:active .slider__arrow {
-  fill: variables.$color-green;
-  opacity: 0.6;
 }
