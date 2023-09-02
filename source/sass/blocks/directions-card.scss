@@ -7,7 +7,7 @@
   padding: 30px 33px 18px 20px;
 
   @media (min-width: variables.$width-tablet) {
-    padding: 77px 296px 53px 0;
+    padding: 77px 312px 53px 0;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -16,10 +16,6 @@
   }
 
   &--weight {
-    @media (min-width: variables.$width-tablet) {
-      padding: 77px 280px 53px 0;
-    }
-
     @media (min-width: variables.$width-desktop) {
       padding: 77px 21px 55px 11px;
     }
@@ -30,19 +26,26 @@
     width: 50px;
     height: 54px;
     position: absolute;
-    background-image: url("../img/cat-slim.png");
+    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
+    background-size: 50px 53px;
     top: 22px;
     left: 20px;
 
     @media (min-width: variables.$width-tablet) {
+      width: 200px;
+      height: 211px;
       top: 71px;
-      left: 515px;
+      left: 449px;
+      background-size: 200px 211px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 71px;
-      left: 100px;
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 58px;
+      background-size: 100px 106px;
     }
   }
 
@@ -51,19 +54,26 @@
     width: 68px;
     height: 54px;
     position: absolute;
-    background-image: url("../img/cat-weight.png");
+    background-image: url("../img/cat-weight.svg");
     background-repeat: no-repeat;
+    background-size: 67px 50px;
     top: 22px;
     left: 20px;
 
     @media (min-width: variables.$width-tablet) {
+      width: 268px;
+      height: 200px;
       top: 71px;
-      left: 515px;
+      left: 414px;
+      background-size: 268px 200px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 71px;
-      left: 100px;
+      width: 134px;
+      height: 100px;
+      top: 44px;
+      left: 59px;
+      background-size: 134px 100px;
     }
   }
 }
