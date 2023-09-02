@@ -13,7 +13,6 @@
     background-size: auto 303px;
   }
 
-
   @media (min-width: variables.$width-tablet) {
     padding-top: 0;
     padding-bottom: 487px;
@@ -28,7 +27,7 @@
     padding-bottom: 187px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-background@2x.png.png"),  linear-gradient(to right, #ffffff 50%, #64a83d 50%);
+      background-image: url("../img/promo-background@2x.png.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
       background-size: auto 694px;
     }
   }
