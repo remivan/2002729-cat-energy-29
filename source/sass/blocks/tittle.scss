@@ -19,8 +19,7 @@
 
 .tittle--index {
   text-align: center;
-
-  padding-top: 41px;
+  padding-bottom: 25px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 60px;
@@ -33,19 +32,37 @@
 
   @media (min-width: variables.$width-desktop) {
     margin: 0 720px 0 80px;
-    padding-top: 110px;
+    padding-top: 224px;
   }
 }
 
 .tittle--form {
   color: variables.$color-black;
+  margin: 0;
+  margin-bottom: 37px;
 
   @media (min-width: variables.$width-tablet) {
     padding-left: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding-left: 0;
+    margin-bottom: 54px;
   }
 }
 
 .tittle--catalog {
   color: variables.$color-black;
-  padding-top: 42px;
+
+  @media (min-width: variables.$width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    margin: 54px 0;
+  }
 }

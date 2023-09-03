@@ -10,5 +10,9 @@
     width: 100%;
     top: 35px;
     z-index: -1;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 51px;
+    }
   }
 }

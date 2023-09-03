@@ -1,7 +1,6 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
-
 .main-footer__title {
   font-family: variables.$oswald-font;
   font-size: 16px;
@@ -17,57 +16,92 @@
   }
 }
 
-.main-footer__address {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  width: 140px;
-}
-
 .main-footer__cooperation {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  background-color: variables.$color-grey-light;
 
   &--index {
     background-color: variables.$color-white;
   }
 
+
+  @media (min-width: variables.$width-desktop) {
+    position: relative;
+  }
+}
+
+.main-footer__cooperation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
   @media (min-width: variables.$width-tablet) {
-    width: 628px;
-    margin: auto;
+    padding: 61px 40px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: variables.$width-desktop) {
-    width: 565px;
-    background-color: variables.$color-white;
     position: absolute;
+    background-color: variables.$color-white;
+    width: 565px;
     z-index: 1;
+    top: 110px;
+    left: 50px;
+    padding: 60px 80px;
   }
 }
 
 .main-footer__map {
-  position: relative;
   display: block;
   margin: auto;
 }
 
 .main-footer__logo {
   display: block;
-  text-align: center;
+  justify-content: center;
   padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid variables.$color-border;
+  margin-bottom: 20px;
 
   @media (min-width: variables.$width-tablet) {
     padding: 0;
+    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 
 .main-footer__container {
   background-color: variables.$color-grey-light;
+
+  @media (min-width: variables.$width-tablet) {
+    padding: 61px 0;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding: 66px 0;
+  }
 }
 
 .main-footer__social {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: variables.$width-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__map-iframe {
+  border: none;
+  display: block;
+  height: 362px;
+  width: 100%;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 362px;
+
+  @media (min-width: variables.$width-tablet) {
+    height: 400px;
+  }
 }

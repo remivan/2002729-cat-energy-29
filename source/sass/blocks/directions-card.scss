@@ -2,16 +2,79 @@
 @use "base/mixins.scss" as *;
 
 .directions-card {
+  position: relative;
   background-color: variables.$color-grey-light;
   padding: 30px 33px 18px 20px;
 
   @media (min-width: variables.$width-tablet) {
-    padding: 77px 316px 53px 33px;
+    padding: 77px 312px 53px 0;
   }
 
   @media (min-width: variables.$width-desktop) {
     width: 570px;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 21px 55px 0;
+  }
+
+  &--weight {
+    @media (min-width: variables.$width-desktop) {
+      padding: 77px 21px 55px 11px;
+    }
+  }
+
+  &--slim::before {
+    content: "";
+    width: 50px;
+    height: 54px;
+    position: absolute;
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+    top: 22px;
+    left: 20px;
+
+    @media (min-width: variables.$width-tablet) {
+      width: 200px;
+      height: 211px;
+      top: 71px;
+      left: 449px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 58px;
+      background-size: 100px 106px;
+    }
+  }
+
+  &--weight::before {
+    content: "";
+    width: 68px;
+    height: 54px;
+    position: absolute;
+    background-image: url("../img/cat-weight.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    top: 22px;
+    left: 20px;
+
+    @media (min-width: variables.$width-tablet) {
+      width: 268px;
+      height: 200px;
+      top: 71px;
+      left: 414px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      width: 134px;
+      height: 100px;
+      top: 44px;
+      left: 59px;
+      background-size: 134px 100px;
+    }
   }
 }
 
@@ -23,39 +86,74 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 90px;
+  margin-bottom: 30px;
+  padding-left: 69px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 53px;
+    padding-left: 53px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    margin-left: 214px;
+    padding-left: 214px;
   }
 }
 
 .directions-card__link {
+  position: relative;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: variables.$color-black;
-  margin-top: 38px;
+  display: block;
 
   @media (min-width: variables.$width-tablet) {
-    margin-top: 48px;
-    margin-left: 52px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  @media (min-width: variables.$width-desktop) {
-    margin-top: 27px;
+  &:hover {
+    &::before {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 24px;
+    height: 16px;
+    top: 0;
+    left: 102px;
+
+    @media (min-width: variables.$width-tablet) {
+      top: 7px;
+      left: 190px;
+    }
   }
 }
 
 .directions-card__description {
-  margin-top: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 23px;
+
+  @media (max-width: variables.$width-mobi-only) {
+    border-bottom: 1px solid variables.$color-border;
+  }
 
   @media (min-width: variables.$width-tablet) {
     margin-top: 24px;

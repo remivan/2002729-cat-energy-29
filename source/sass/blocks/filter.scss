@@ -1,18 +1,24 @@
 @use "base/variables.scss";
 
+.filter {
+  @media (min-width: variables.$width-desktop) {
+    padding-top: 74px;
+  }
+}
+
 .filter__text {
   font-family: variables.$oswald-font;
   color: variables.$color-black;
   text-transform: uppercase;
-  width: 226px;
-  padding: 37px 0 0 0;
-  margin: 0;
+  margin: 0 50px 39px 0;
 
   @media (min-width: variables.$width-tablet) {
-    padding: 65px 0 0 0;
+    margin: 0 345px 66px 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    padding: 55px 0 0 0;
+    margin: 0 850px 66px 0;
   }
 }

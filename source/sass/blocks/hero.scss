@@ -2,15 +2,33 @@
 
 .hero {
   color: variables.$color-white;
-  background-image: url("../img/promo-background.png"), linear-gradient(rgba(104, 183, 56, 0.85) 64%, variables.$color-white 64%);
+  background-image: url("../img/promo-background.png"), linear-gradient(to bottom, #64a83d 63%, #ffffff 63%);
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 27px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background@2x.png"), linear-gradient(to bottom, #64a83d 100%, #ffffff 100%);
+    background-size: auto 303px;
+  }
+
   @media (min-width: variables.$width-tablet) {
     padding-top: 0;
-    background-color: variables.$color-white;
+    padding-bottom: 487px;
+    background-image: none;
     color: variables.$color-black;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    background-image: url("../img/index-background-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
+    background-position: top left calc(50% + 360px);
+    margin-bottom: 82px;
+    padding-bottom: 187px;
+    background-size: auto 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background@2x.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
+    }
   }
 }
 
@@ -19,13 +37,40 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 25px 42px 0 40px;
+  margin: 0 42px 29px 40px;
 
   @media (min-width: variables.$width-tablet) {
     margin: 40px 335px 0 90px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .hero__img {
-  padding-top: 29px;
+  display: block;
+  margin-bottom: 3px;
+
+  @media (min-width: variables.$width-tablet) {
+    position: absolute;
+    z-index: -1;
+    top: 252px;
+    right: 21px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    z-index: 2;
+    top: 110px;
+    right: 265px;
+  }
+}
+
+.hero__button {
+  @media (min-width: variables.$width-tablet) {
+    width: 244px;
+    margin: 50px 0 0 90px;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
 }

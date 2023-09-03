@@ -1,17 +1,40 @@
 @use "base/variables.scss";
 
+.logo {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: variables.$width-desktop) {
+    background-color: transparent;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__logo-image {
+  display: block;
+  margin-right: 56px;
+
   @media (min-width: variables.$width-tablet) {
     height: 50px;
+    margin-right: 13px;
   }
 
   @media (min-width: variables.$width-desktop) {
     height: 59px;
+    margin-right: 14px;
   }
 }
 
 .logo__logo-text {
-  margin-left: 30px;
+  display: block;
+
 
   @media (min-width: variables.$width-desktop) {
     height: 21px;

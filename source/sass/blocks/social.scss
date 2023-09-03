@@ -1,8 +1,35 @@
 @use "base/variables.scss";
 @use "base/mixins.scss" as *;
 
-/*
+
 .social {
   @include list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid variables.$color-border;
+
+  @media (min-width: variables.$width-tablet) {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
-*/
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon {
+  fill: variables.$color-green;
+}
+
+.social__link:active .social__icon {
+  fill: variables.$color-green;
+  opacity: 0.3;
+}
