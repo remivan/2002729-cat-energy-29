@@ -101,7 +101,26 @@
   background-position: center;
   background-size: 320px 362px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.jpg");
+  }
+
   @media (min-width: variables.$width-tablet) {
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 768px 400px;
     height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    background-image: url("../img/map-desk.jpg");
+    background-size: 1440px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desk@2x.jpg");
+    }
   }
 }
