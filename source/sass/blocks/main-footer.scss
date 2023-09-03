@@ -17,15 +17,12 @@
 }
 
 .main-footer__cooperation {
+  background-color: variables.$color-grey-light;
+
   &--index {
     background-color: variables.$color-white;
   }
 
-  @media (min-width: variables.$width-tablet) {
-    padding: 61px 40px;
-    width: 628px;
-    justify-content: space-between;
-  }
 
   @media (min-width: variables.$width-desktop) {
     position: relative;
@@ -36,7 +33,12 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 0;
-  background-color: variables.$color-white;
+
+  @media (min-width: variables.$width-tablet) {
+    padding: 61px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media (min-width: variables.$width-desktop) {
     position: absolute;

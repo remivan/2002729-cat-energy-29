@@ -41,8 +41,9 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 98px;
-  left: 119px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid #666666;
   border-radius: 50%;
   background-color: variables.$color-white;
@@ -53,11 +54,6 @@
   &:active {
     border: 2px solid variables.$color-green;
     opacity: 0.6;
-  }
-
-  @media (min-width: variables.$width-tablet) {
-    top: 218px;
-    left: -17px;
   }
 }
 

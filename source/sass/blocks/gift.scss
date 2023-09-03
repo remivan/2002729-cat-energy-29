@@ -43,6 +43,12 @@
     height: 80px;
     left: 96px;
     top: 63px;
+
+    @media (min-width: variables.$width-desktop) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 

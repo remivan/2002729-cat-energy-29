@@ -86,7 +86,8 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 90px;
+  margin-bottom: 30px;
+  padding-left: 69px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 36px;
@@ -137,7 +138,7 @@
     width: 24px;
     height: 16px;
     top: 0;
-    left: 105px;
+    left: 102px;
 
     @media (min-width: variables.$width-tablet) {
       top: 7px;
@@ -147,8 +148,8 @@
 }
 
 .directions-card__description {
+  margin-bottom: 18px;
   padding-bottom: 23px;
-  margin-bottom: 15px;
 
   @media (max-width: variables.$width-mobi-only) {
     border-bottom: 1px solid variables.$color-border;
