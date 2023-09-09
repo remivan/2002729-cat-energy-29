@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   border-top: 1px solid #cdcdcd;
   text-align: center;
-  height: 294px;
+  height: 291px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-background@2x.png");
@@ -41,12 +41,18 @@
     background-image: url("../img/icon-gift.svg");
     width: 78px;
     height: 80px;
-    left: 96px;
-    top: 63px;
+    left: 50%;
+    top: 98px;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: variables.$width-tablet) {
+      left: 78px;
+      top: 57px;
+    }
 
     @media (min-width: variables.$width-desktop) {
       left: 50%;
-      top: 50%;
+      top: 93px;
       transform: translate(-50%, -50%);
     }
   }
@@ -56,16 +62,18 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-  padding: 186px 62px 43px 58px;
+  padding: 187px 56px 45px 53px;
   color: variables.$color-white;
 
   @media (min-width: variables.$width-tablet) {
     margin: 30px 111px 0 194px;
-    padding: 47px 35px 1px 212px;
+    padding: 41px 9px 0 229px;
+    text-align: left;
   }
 
   @media (min-width: variables.$width-desktop) {
     margin: 0;
-    padding: 186px 30px 58px;
+    padding: 183px 30px 58px;
+    text-align: center;
   }
 }

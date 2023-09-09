@@ -1,10 +1,8 @@
 @use "base/variables.scss";
 
 .catalog-card {
-  font-size: 16px;
-  line-height: 20px;
   border-top: 1px solid variables.$color-card-border;
-  padding: 25px 0;
+  padding: 22px 0 23px;
 
   @media (min-width: variables.$width-tablet) {
     border-top: none;
@@ -13,6 +11,8 @@
 }
 
 .catalog-card__title {
+  font-size: 16px;
+  line-height: 20px;
   font-family: variables.$oswald-font;
   font-weight: 400;
   color: variables.$color-black-lighter;
@@ -21,9 +21,13 @@
 
   @media (min-width: variables.$width-tablet) {
     text-align: center;
-    width: 130px;
+    width: 135px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 133px;
   }
 }
 
@@ -32,11 +36,11 @@
   margin-bottom: 21px;
 
   @media (min-width: variables.$width-tablet) {
-    margin-bottom: 32px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    margin-bottom: 37px;
+    margin-bottom: 29px;
   }
 }
 
@@ -51,7 +55,7 @@
     border-bottom: 1px solid #cdcdcd;
     width: 250px;
     padding-bottom: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -59,15 +63,14 @@
   @media (min-width: variables.$width-desktop) {
     border-bottom: 1px solid #cdcdcd;
     width: 169px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 6px;
   }
 }
 
 .catalog-card__wrapper--more {
   display: block;
   text-align: center;
-  padding-top: 78px;
+  padding-top: 58px;
 
   @media (min-width: variables.$width-tablet) {
     height: 429px;
@@ -98,6 +101,8 @@
 }
 
 .catalog-card__text--more {
+  font-size: 16px;
+  line-height: 20px;
   font-family: variables.$oswald-font;
   color: variables.$color-black-light;
   text-transform: uppercase;
@@ -119,7 +124,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 47px;
+    top: 40px;
     left: 144px;
     width: 30px;
     height: 2px;
@@ -128,20 +133,20 @@
 
     @media (min-width: variables.$width-tablet) {
       width: 60px;
-      top: 174px;
-      left: 132px;
+      top: 163px;
+      left: 133px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 145px;
-      left: 96px;
+      top: 156px;
+      left: 93px;
     }
   }
 
   &::after {
     position: absolute;
     content: "";
-    top: 47px;
+    top: 40px;
     left: 144px;
     width: 30px;
     height: 2px;
@@ -150,13 +155,13 @@
 
     @media (min-width: variables.$width-tablet) {
       width: 60px;
-      top: 174px;
+      top: 164px;
       left: 132px;
     }
 
     @media (min-width: variables.$width-desktop) {
-      top: 145px;
-      left: 96px;
+      top: 160px;
+      left: 92px;
     }
   }
 }
@@ -187,13 +192,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 
   @media (min-width: variables.$width-tablet) {
     width: 324px;
     justify-content: center;
     background-image: linear-gradient(variables.$color-white 15%, variables.$color-grey-light 15%);
-    padding: 10px 37px 40px;
+    padding: 13px 37px 40px;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -228,7 +232,7 @@
 
     @media (min-width: variables.$width-tablet) {
       width: 135px;
-      margin-bottom: 21px;
+      margin-bottom: 19px;
     }
 
     @media (min-width: variables.$width-desktop) {
@@ -259,16 +263,20 @@
   }
 
   &--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 107px;
+
     @media (min-width: variables.$width-tablet) {
-      margin-bottom: 22px;
+      width: 200px;
+      height: 210px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: variables.$width-desktop) {
       margin-bottom: 12px;
     }
   }
-}
-
-.catalog-card__img {
-  display: block;
 }

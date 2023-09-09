@@ -16,7 +16,7 @@
   @media (min-width: variables.$width-desktop) {
     border-top: none;
     background-image: linear-gradient(to bottom, variables.$color-white, variables.$color-white 204px, variables.$color-background-grey 204px);
-    padding-bottom: 0;
+    padding-bottom: 6px;
     padding-top: 69px;
   }
 }

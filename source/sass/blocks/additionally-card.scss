@@ -1,14 +1,25 @@
 @use "base/variables.scss";
 
 .additionally-card {
-  border-top: 1px solid #cdcdcd;
-  margin-bottom: 19px;
+  border-top: 1px solid variables.$color-card-border;
+  margin-bottom: 18px;
+
+  @media (min-width: variables.$width-tablet) {
+    margin-bottom: 0;
+    padding-bottom: 26px;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
 
   @media (min-width: variables.$width-desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
+    margin-bottom: -7px;
+    padding-bottom: 22px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
@@ -16,14 +27,16 @@
   @media (min-width: variables.$width-tablet) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     margin-top: 26px;
+    padding: 0 39px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    width: 566px;
+    width: 618px;
     margin-bottom: 0;
     margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -48,26 +61,36 @@
 
 .additionally-card__item {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 14px;
   display: flex;
   justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
 
   @media (min-width: variables.$width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
     display: grid;
     grid-template-columns: 235px 91px;
     justify-items: right;
     margin: 0;
+    padding-top: 3px;
   }
 
   @media (min-width: variables.$width-desktop) {
     justify-items: left;
+    grid-template-columns: 199px 91px;
   }
 }
 
 .additionally__button {
+  @media (min-width: variables.$width-tablet) {
+    width: 632px;
+    margin: 0 auto;
+  }
+
   @media (min-width: variables.$width-desktop) {
     width: 244px;
+    margin-left: 33px;
   }
 }
