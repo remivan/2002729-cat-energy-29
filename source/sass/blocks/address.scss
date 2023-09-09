@@ -5,12 +5,13 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  width: 157px;
+  width: 140px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    width: 157px;
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -22,7 +23,7 @@
   margin: 0;
 
   @media (min-width: variables.$width-tablet) {
-    margin-bottom: 14px;
+    margin-bottom: 19px;
   }
 }
 

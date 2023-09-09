@@ -25,11 +25,11 @@
 
 
   @media (min-width: variables.$width-tablet) {
-    background-image: linear-gradient(variables.$color-white 122px, variables.$color-background-grey 122px);
+    background-image: linear-gradient(variables.$color-white 150px, variables.$color-background-grey 150px);
   }
 
   @media (min-width: variables.$width-desktop) {
-    background-image: linear-gradient(variables.$color-white 131px, variables.$color-background-grey 131px);
+    background-image: linear-gradient(variables.$color-white 135px, variables.$color-background-grey 135px);
   }
 }
 
@@ -71,8 +71,8 @@
   left: 137px;
 
   @media (min-width: variables.$width-tablet) {
-    height: 505px;
-    left: 279px;
+    height: 510px;
+    left: 277px;
   }
 
   &:hover {
