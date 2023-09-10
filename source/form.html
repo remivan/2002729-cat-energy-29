@@ -21,9 +21,8 @@
                 <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
               </picture>
           </a>
-
         </div>
-        <nav class="main-nav main-nav--nojs">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__span"></span>
@@ -51,17 +50,17 @@
         </div>
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form-wrapper-desk container container--form">
-            <div class="form__fieldset form__fieldset--desk">
+          <div class="form__wrapper--desk">
+            <div class="form__fieldset form__fieldset--cat form__fieldset--desk">
               <h2 class="visually-hidden">Информация о коте.</h2>
-              <div class="form__wrapper">
-                <label class="form__label">ИМЯ:*
+              <div class="form__wrapper form__wrapper--cat">
+                <label class="form__label form__label--cat">ИМЯ:*
                   <input class="form__input" type="text" name="cat-name" placeholder="барсик" required>
                 </label>
-                <label class="form__label">Вес (кг):*
+                <label class="form__label form__label--cat">Вес (кг):*
                   <input class="form__input" type="number" name="cat-weight" placeholder="7" required>
                 </label>
-                <label class="form__label">Возраст (лет):
+                <label class="form__label form__label--cat">Возраст (лет):
                   <input class="form__input" type="number" name="cat-age" placeholder="7">
                 </label>
               </div>
@@ -95,13 +94,13 @@
               </div>
             </div>
             <div class="form__wrapper form__wrapper--owner container container--form">
-              <label class="form__label form__label--desk">E-mail:*
+              <label class="form__label form__label--desk form__label--owner">E-mail:*
                 <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__input-icon" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
                 </svg>
               </label>
-              <label class="form__label form__label--desk">Телефон:*
+              <label class="form__label form__label--desk form__label--owner">Телефон:*
                 <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__input-icon" width="21" height="20" viewBox="0 0 21 20" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -110,7 +109,7 @@
             </div>
           </div>
 
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--comment">
             <div class="form__legend-wrapper line">
               <div class="form__legend-container container container--form">
                 <h2 class="form__legend form__legend--comment">Комментарий</h2>
