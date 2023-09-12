@@ -48,7 +48,7 @@
     width: 565px;
     z-index: 1;
     top: 93px;
-    left: 112px;
+    left: 41px;
     padding: 62px 79px 60px;
   }
 }
@@ -74,6 +74,10 @@
   }
 }
 
+.main-footer__cooperation-container {
+  position: relative;
+}
+
 .main-footer__container {
   background-color: variables.$color-grey-light;
   padding-bottom: 40px;
@@ -83,7 +87,7 @@
   }
 
   @media (min-width: variables.$width-desktop) {
-    padding: 68px 0;
+    padding: 64px 0;
   }
 }
 

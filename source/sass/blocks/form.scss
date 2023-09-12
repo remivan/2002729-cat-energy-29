@@ -142,13 +142,17 @@
     border-color: #cdcdcd;
   }
 
-  &:focus {
-    border-radius: 0;
+  &--error {
+    border: 2px solid #ff8282;
+
+    & + .form__input-icon {
+      stroke: #ff8282;
+    }
   }
 }
 
 .form__input:focus + .form__input-icon {
-  stroke: variables.$color-green;
+  color: variables.$color-green;
 }
 
 .form__radio-mark {
@@ -186,6 +190,10 @@
 
 .form__radio-input:hover[type="radio"] + .form__radio-mark {
   border: 1px solid #bababa;
+}
+
+.form__radio-input:focus-visible[type="radio"] + .form__radio-mark {
+  outline: 1px solid variables.$color-green;
 }
 
 .form__radio-input:disabled[type="radio"] + .form__radio-mark,
@@ -338,6 +346,10 @@
   &--additionally {
     @media (min-width: variables.$width-tablet) {
       margin-bottom: 19px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      margin-bottom: 60px;
     }
   }
 }
@@ -496,6 +508,10 @@
 
 .form__checkbox-input:hover[type="checkbox"] + .form__checkbox-mark {
   border: 1px solid #bababa;
+}
+
+.form__checkbox-input:focus-visible[type="checkbox"] + .form__checkbox-mark {
+  outline: 1px solid  variables.$color-green;
 }
 
 .form__checkbox-input:disabled[type="checkbox"] + .form__checkbox-mark,

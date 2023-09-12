@@ -46,13 +46,13 @@
     transform: translate(-50%, -50%);
 
     @media (min-width: variables.$width-tablet) {
-      left: 78px;
-      top: 57px;
+      left: 118px;
+      top: 97px;
     }
 
     @media (min-width: variables.$width-desktop) {
       left: 50%;
-      top: 93px;
+      top: 95px;
       transform: translate(-50%, -50%);
     }
   }

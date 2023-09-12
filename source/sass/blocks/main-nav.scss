@@ -84,3 +84,11 @@
     opacity: 30%;
   }
 }
+
+.main-nav--opened .main-nav__list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  z-index: 2;
+}

@@ -1,6 +1,10 @@
 @use "base/variables.scss";
 
 .main-header {
+  @media (max-width: variables.$width-mobi-only) {
+    border-bottom: 1px solid variables.$color-border;
+  }
+
   @media (min-width: variables.$width-desktop) {
     position: relative;
     width: 1300px;

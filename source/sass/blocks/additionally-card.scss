@@ -1,7 +1,7 @@
 @use "base/variables.scss";
 
 .additionally-card {
-  border-top: 1px solid variables.$color-card-border;
+  border-top: 1px solid variables.$color-border;
   margin-bottom: 18px;
 
   @media (min-width: variables.$width-tablet) {
@@ -17,7 +17,7 @@
     align-items: center;
     padding-top: 15px;
     margin-bottom: -7px;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
     border: none;
     border-top: 1px solid #cdcdcd;
   }
@@ -79,7 +79,7 @@
 
   @media (min-width: variables.$width-desktop) {
     justify-items: left;
-    grid-template-columns: 199px 91px;
+    grid-template-columns: 203px 89px;
   }
 }
 

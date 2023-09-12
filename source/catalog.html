@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -17,12 +17,13 @@
               <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-mobile-text-tablet.svg">
+              <source media="(min-width: 1440px)" srcset="img/logo-text-tablet.svg" width="118" height="21">
+              <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
               <img class="logo__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__span"></span>
@@ -365,7 +366,7 @@
       <section class="additionally">
         <div class="additionally__wrapper">
 
-          <div class="additionally__container line">
+          <div class="additionally__container line line--additionally">
             <div class="additionally__container container">
               <h2 class="additionally__title">Дополнительные товары</h2>
             </div>
@@ -442,7 +443,7 @@
     <footer class="main-footer">
 
       <div class="main-footer__cooperation">
-        <div class="container">
+        <div class="container main-footer__cooperation-container">
           <div class="main-footer__cooperation-wrapper">
             <p class="main-footer__title">приглашаем<br>  к сотрудничеству дилеров!</p>
             <address class="main-footer__address address">
@@ -461,7 +462,7 @@
         <div class="main-footer__social container">
           <a class="main-footer__logo logo" href="#">
             <span class="visually-hidden">Логотип Cat Energy.</span>
-            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 18" width="128" height="24">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 24" width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>

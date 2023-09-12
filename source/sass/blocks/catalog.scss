@@ -2,7 +2,7 @@
 @use "base/mixins.scss" as *;
 
 .catalog {
-  padding-top: 24px;
+  padding-top: 28px;
 
   @media (min-width: variables.$width-tablet) {
     padding-top: 51px;
@@ -37,7 +37,7 @@
     width: 1300px;
     padding: 30px 40px 0;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 65px;
+    row-gap: 64px;
     column-gap: 80px;
   }
 }
