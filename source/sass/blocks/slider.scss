@@ -23,7 +23,6 @@
   background-color: variables.$color-background-grey;
   z-index: 1;
 
-
   @media (min-width: variables.$width-tablet) {
     background-image: linear-gradient(variables.$color-white 153px, variables.$color-background-grey 153px);
   }
