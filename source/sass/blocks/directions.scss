@@ -3,10 +3,6 @@
 
 .directions {
   padding-top: 20px;
-
-  @media (min-width: variables.$width-tablet) {
-    padding-top: 40px;
-  }
 }
 
 .directions__list {

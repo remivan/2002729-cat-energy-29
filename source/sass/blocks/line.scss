@@ -12,17 +12,7 @@
     z-index: -1;
 
     @media (min-width: variables.$width-tablet) {
-      top: 42px;
-    }
-  }
-
-  &--additionally {
-    &::before {
-      top: 34px;
-
-      @media (min-width: variables.$width-tablet) {
-        top: 52px;
-      }
+      top: 51px;
     }
   }
 }

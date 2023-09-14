@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$width-tablet) {
-    padding-top: 51px;
+    padding-top: 0;
     padding-bottom: 487px;
     background-image: none;
     color: variables.$color-black;
@@ -22,8 +22,8 @@
   @media (min-width: variables.$width-desktop) {
     background-image: url("../img/index-background-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a83d 50%);
     background-position: top left calc(50% + 360px);
-    margin-bottom: 42px;
-    padding-bottom: 182px;
+    margin-bottom: 82px;
+    padding-bottom: 187px;
     background-size: auto 694px;
 
     @media (min-resolution: 2dppx) {
@@ -40,13 +40,9 @@
   margin: 0 42px 29px 40px;
 
   @media (min-width: variables.$width-tablet) {
-    margin: 0 335px 49px 90px;
+    margin: 40px 335px 0 90px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    margin: 0 335px 54px 80px;
   }
 }
 
@@ -57,25 +53,21 @@
   @media (min-width: variables.$width-tablet) {
     position: absolute;
     z-index: -1;
-    top: 201px;
-    right: 30px;
+    top: 252px;
+    right: 21px;
   }
 
   @media (min-width: variables.$width-desktop) {
     z-index: 2;
-    top: 91px;
-    right: 261px;
+    top: 110px;
+    right: 265px;
   }
 }
 
 .hero__button {
   @media (min-width: variables.$width-tablet) {
     width: 244px;
-    margin: 0 0 0 90px;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    margin: 0 0 0 80px;
+    margin: 50px 0 0 90px;
   }
 }
 

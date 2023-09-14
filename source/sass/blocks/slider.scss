@@ -25,11 +25,11 @@
 
 
   @media (min-width: variables.$width-tablet) {
-    background-image: linear-gradient(variables.$color-white 153px, variables.$color-background-grey 153px);
+    background-image: linear-gradient(variables.$color-white 122px, variables.$color-background-grey 122px);
   }
 
   @media (min-width: variables.$width-desktop) {
-    background-image: linear-gradient(variables.$color-white 135px, variables.$color-grey-light 135px);
+    background-image: linear-gradient(variables.$color-white 131px, variables.$color-background-grey 131px);
   }
 }
 
@@ -37,59 +37,62 @@
   max-width: none;
 }
 
-.slider__wrap:hover {
-  .slider__button-toggle {
-    background-color: variables.$color-green;
+.slider__wrap {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: variables.$color-white;
+  text-align: center;
+  padding: 0;
+  z-index: 3;
 
-    &::before {
-      border: 2px solid variables.$color-green;
-    }
-
-    .slider__arrow {
-      fill: variables.$color-green;
-    }
+  &:active {
+    border: 2px solid variables.$color-green;
+    opacity: 0.6;
   }
 }
 
 .slider__button-toggle {
-  position: relative;
-  top: -260px;
+  position: absolute;
+  top: 0;
   bottom: 0;
   padding: 0;
   width: 4px;
   height: 254px;
-  left: 138px;
   background-color: #666666;
   border-radius: 2px;
   z-index: 1;
   border: 0;
+  left: 137px;
 
   @media (min-width: variables.$width-tablet) {
-    height: 510px;
-    left: 277px;
-    top: -519px;
+    height: 505px;
+    left: 279px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #666666;
-    border-radius: 50%;
-    background-color: variables.$color-white;
-    text-align: center;
-    padding: 0;
-    z-index: 3;
+  &:hover {
+    background-color: variables.$color-green;
+  }
+
+  &:hover .slider__arrow {
+    fill: variables.$color-green;
+  }
+
+  &:hover .slider__wrap {
+    border: 2px solid variables.$color-green;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .slider__arrow {
-  position: relative;
-  z-index: 4;
+  transform: translate(0%, 50%);
   fill: #666666;
-  transform: translate(-40%, 14%);
 }

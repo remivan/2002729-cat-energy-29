@@ -6,12 +6,11 @@
   @include list;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 24px;
-  padding-bottom: 16px;
-  margin-bottom: 21px;
+  gap: 20px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
 
   border-bottom: 1px solid variables.$color-border;
 
@@ -19,15 +18,7 @@
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
-    margin-top: 6px;
   }
-}
-
-.social__link {
-  display: block;
-  width: 28px;
-  height: 22px;
-  text-align: center;
 }
 
 .social__icon {
