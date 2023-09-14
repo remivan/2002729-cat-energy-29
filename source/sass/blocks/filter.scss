@@ -1,8 +1,17 @@
 @use "base/variables.scss";
 
 .filter {
+  padding-top: 27px;
+  padding-bottom: 19px;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-top: 50px;
+    padding-bottom: 38px;
+  }
+
   @media (min-width: variables.$width-desktop) {
-    padding-top: 74px;
+    padding-top: 189px;
+    padding-bottom: 58px;
   }
 }
 
@@ -13,7 +22,7 @@
   margin: 0 50px 39px 0;
 
   @media (min-width: variables.$width-tablet) {
-    margin: 0 345px 66px 40px;
+    margin: 0 345px 65px 40px;
     font-size: 20px;
     line-height: 30px;
   }

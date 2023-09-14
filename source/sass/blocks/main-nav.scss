@@ -2,7 +2,6 @@
 
 .main-nav {
   position: relative;
-  min-height: 66px;
 }
 
 .main-nav__toggle {
@@ -10,8 +9,8 @@
   width: 26px;
   height: 26px;
   background-color: variables.$color-white;
-  top: -26px;
-  right: -3px;
+  top: -46px;
+  right: 21px;
   z-index: 2;
   padding: 0;
   border: none;
@@ -26,8 +25,8 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  top: -11px;
-  right: 20px;
+  top: 11px;
+  right: 0;
   background-color: variables.$color-black;
 }
 
@@ -55,7 +54,7 @@
   background-color: variables.$color-black;
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav--closed .main-nav {
   display: none;
 }
 
@@ -64,8 +63,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: -11px;
-    right: 20px;
+    top: 13px;
+    right: 1px;
     width: 20px;
     height: 2px;
     background-color: variables.$color-black;
@@ -84,4 +83,12 @@
   &:active::after {
     opacity: 30%;
   }
+}
+
+.main-nav--opened .main-nav__list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  z-index: 2;
 }

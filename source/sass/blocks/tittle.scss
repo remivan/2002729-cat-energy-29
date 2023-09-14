@@ -7,14 +7,6 @@
   color: variables.$color-white;
   font-weight: 400;
   margin: 0;
-
-  @media (min-width: variables.$width-tablet) {
-    padding-top: 65px;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    padding-top: 74px;
-  }
 }
 
 .tittle--index {
@@ -25,14 +17,13 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 0 202px 0 90px;
+    margin: 0 202px 15px 90px;
     color: variables.$color-black;
-    padding-top: 80px;
   }
 
   @media (min-width: variables.$width-desktop) {
-    margin: 0 720px 0 80px;
-    padding-top: 224px;
+    margin: 0 720px 12px 80px;
+    padding-top: 175px;
   }
 }
 
@@ -45,7 +36,7 @@
     padding-left: 40px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: variables.$width-desktop) {

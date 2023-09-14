@@ -4,22 +4,17 @@
 .directions-card {
   position: relative;
   background-color: variables.$color-grey-light;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 22px 20px;
 
   @media (min-width: variables.$width-tablet) {
-    padding: 77px 312px 53px 0;
+    padding: 77px 312px 57px 0;
   }
 
   @media (min-width: variables.$width-desktop) {
     width: 570px;
-    padding: 77px 21px 55px 0;
+    padding: 77px 27px 55px 0;
   }
 
-  &--weight {
-    @media (min-width: variables.$width-desktop) {
-      padding: 77px 21px 55px 11px;
-    }
-  }
 
   &--slim::before {
     content: "";
@@ -35,8 +30,8 @@
     @media (min-width: variables.$width-tablet) {
       width: 200px;
       height: 211px;
-      top: 71px;
-      left: 449px;
+      top: 80px;
+      left: 445px;
       background-size: 200px 211px;
     }
 
@@ -44,7 +39,7 @@
       width: 100px;
       height: 106px;
       top: 41px;
-      left: 58px;
+      left: 52px;
       background-size: 100px 106px;
     }
   }
@@ -57,22 +52,22 @@
     background-image: url("../img/cat-weight.svg");
     background-repeat: no-repeat;
     background-size: 67px 50px;
-    top: 22px;
-    left: 20px;
+    top: 24px;
+    left: 12px;
 
     @media (min-width: variables.$width-tablet) {
       width: 268px;
       height: 200px;
-      top: 71px;
-      left: 414px;
+      top: 90px;
+      left: 411px;
       background-size: 268px 200px;
     }
 
     @media (min-width: variables.$width-desktop) {
       width: 134px;
       height: 100px;
-      top: 44px;
-      left: 59px;
+      top: 47px;
+      left: 35px;
       background-size: 134px 100px;
     }
   }
@@ -86,17 +81,19 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
-  padding-left: 69px;
+  margin-bottom: 29px;
+  padding-left: 70px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 53px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: variables.$width-desktop) {
     padding-left: 214px;
+    margin-bottom: 73px;
   }
 }
 
@@ -110,7 +107,7 @@
   display: block;
 
   @media (min-width: variables.$width-tablet) {
-    padding-left: 50px;
+    padding-left: 53px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -142,25 +139,34 @@
 
     @media (min-width: variables.$width-tablet) {
       top: 7px;
-      left: 190px;
+      left: 185px;
+    }
+  }
+
+  &--weight::before {
+    left: 98px;
+
+    @media (min-width: variables.$width-tablet) {
+      left: 181px;
     }
   }
 }
 
 .directions-card__description {
-  margin-bottom: 18px;
-  padding-bottom: 23px;
+  margin-bottom: 19px;
+  padding-bottom: 22px;
 
   @media (max-width: variables.$width-mobi-only) {
     border-bottom: 1px solid variables.$color-border;
   }
 
   @media (min-width: variables.$width-tablet) {
-    margin-top: 24px;
     margin-left: 52px;
+    margin-bottom: 53px;
+    padding-bottom: 0;
   }
 
   @media (min-width: variables.$width-desktop) {
-    margin-top: 73px;
+    margin-bottom: 28px;
   }
 }

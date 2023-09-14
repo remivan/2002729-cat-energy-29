@@ -2,7 +2,17 @@
 @use "base/mixins.scss" as *;
 
 .advantages {
-  padding-bottom: 49px;
+  padding-top: 21px;
+  padding-bottom: 53px;
+
+  @media (min-width: variables.$width-tablet) {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    padding-top: 76px;
+  }
 }
 
 .advantages__title {
@@ -11,10 +21,13 @@
   line-height: 40px;
   color: variables.$color-black;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 41px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 43px;
   }
 }
 
@@ -24,21 +37,22 @@
 
 .advantages__list {
   @include list;
-  margin-top: 40px;
   display: grid;
   counter-reset: section;
+  gap: 26px;
 
   @media (min-width: variables.$width-tablet) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 137px;
-    row-gap: 37px;
+    column-gap: 57px;
+    row-gap: 49px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: variables.$width-desktop) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    gap: 80px;
+    gap: 76px;
   }
 }
 
@@ -46,17 +60,12 @@
   position: relative;
   margin-left: 80px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
   @media (min-width: variables.$width-tablet) {
-    max-width: max-content;
+    width: 249px;
     display: flex;
     align-items: center;
     margin-left: 0;
-    padding: 151px 26px 57px 0;
-
+    padding: 139px 5px 57px 0;
 
     &::after {
       position: absolute;
@@ -64,8 +73,8 @@
       font-size: 280px;
       line-height: 280px;
       color: variables.$color-grey-light;
-      left: 141px;
-      top: 39px;
+      left: 116px;
+      top: -11px;
       height: 280px;
       counter-increment: section;
       content: counter(section);
@@ -76,16 +85,18 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -77px;
+    top: -3px;
+    left: -80px;
     width: 60px;
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
 
     @media (min-width: variables.$width-tablet) {
-      top: 75px;
+      top: 29px;
       left: 0;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -106,7 +117,7 @@
   }
 }
 
-.advantages__item br {
+.advantages__description br {
   @media (min-width: variables.$width-tablet) {
     display: none;
   }
