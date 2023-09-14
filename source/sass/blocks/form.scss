@@ -105,9 +105,15 @@
     min-height: 150px;
     margin: 0;
     width: 100%;
+    padding: 9px 8px 0 15px;
 
     @media (min-width: variables.$width-tablet) {
       min-height: 175px;
+      padding: 10px 8px 0 20px;
+    }
+
+    @media (min-width: variables.$width-desktop) {
+      padding: 9px 8px 0 20px;
     }
   }
 

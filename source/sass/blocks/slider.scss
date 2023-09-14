@@ -29,7 +29,7 @@
   }
 
   @media (min-width: variables.$width-desktop) {
-    background-image: linear-gradient(variables.$color-white 135px, variables.$color-background-grey 135px);
+    background-image: linear-gradient(variables.$color-white 135px, variables.$color-grey-light 135px);
   }
 }
 
@@ -37,62 +37,59 @@
   max-width: none;
 }
 
-.slider__wrap {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid #666666;
-  border-radius: 50%;
-  background-color: variables.$color-white;
-  text-align: center;
-  padding: 0;
-  z-index: 3;
+.slider__wrap:hover {
+  .slider__button-toggle {
+    background-color: variables.$color-green;
 
-  &:active {
-    border: 2px solid variables.$color-green;
-    opacity: 0.6;
+    &::before {
+      border: 2px solid variables.$color-green;
+    }
+
+    .slider__arrow {
+      fill: variables.$color-green;
+    }
   }
 }
 
 .slider__button-toggle {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -260px;
   bottom: 0;
   padding: 0;
   width: 4px;
   height: 254px;
+  left: 138px;
   background-color: #666666;
   border-radius: 2px;
   z-index: 1;
   border: 0;
-  left: 137px;
 
   @media (min-width: variables.$width-tablet) {
     height: 510px;
     left: 277px;
+    top: -519px;
   }
 
-  &:hover {
-    background-color: variables.$color-green;
-  }
-
-  &:hover .slider__arrow {
-    fill: variables.$color-green;
-  }
-
-  &:hover .slider__wrap {
-    border: 2px solid variables.$color-green;
-  }
-
-  &:active {
-    opacity: 0.6;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #666666;
+    border-radius: 50%;
+    background-color: variables.$color-white;
+    text-align: center;
+    padding: 0;
+    z-index: 3;
   }
 }
 
 .slider__arrow {
-  transform: translate(0%, 50%);
+  position: relative;
+  z-index: 4;
   fill: #666666;
+  transform: translate(-40%, 14%);
 }

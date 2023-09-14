@@ -22,10 +22,12 @@
   color: variables.$color-black;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 41px;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 43px;
   }
 }
 
@@ -35,7 +37,6 @@
 
 .advantages__list {
   @include list;
-  margin-top: 43px;
   display: grid;
   counter-reset: section;
   gap: 26px;
@@ -45,6 +46,7 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 57px;
     row-gap: 49px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: variables.$width-desktop) {

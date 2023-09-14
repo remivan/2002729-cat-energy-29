@@ -4,7 +4,7 @@
 .directions-card {
   position: relative;
   background-color: variables.$color-grey-light;
-  padding: 30px 33px 21px 20px;
+  padding: 30px 33px 22px 20px;
 
   @media (min-width: variables.$width-tablet) {
     padding: 77px 312px 57px 0;
@@ -81,7 +81,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding-left: 70px;
 
   @media (min-width: variables.$width-tablet) {
