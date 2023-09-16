@@ -524,12 +524,3 @@
 .form__checkbox-input:disabled[type="checkbox"] ~ .form__checkbox-text {
   opacity: 0.3;
 }
-
-.form__input::-webkit-outer-spin-button,
-.form__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.form__input[type="number"] {
-  -moz-appearance: textfield;
-}
