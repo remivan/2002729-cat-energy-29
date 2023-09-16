@@ -92,3 +92,13 @@
   width: 320px;
   z-index: 2;
 }
+
+@media (max-width: variables.$width-mobi-only) {
+  .main-nav--closed .navigation-list {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

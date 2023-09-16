@@ -9,6 +9,10 @@
     padding-bottom: 26px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid variables.$color-border;
+    }
   }
 
   @media (min-width: variables.$width-desktop) {
@@ -80,17 +84,5 @@
   @media (min-width: variables.$width-desktop) {
     justify-items: left;
     grid-template-columns: 203px 89px;
-  }
-}
-
-.additionally__button {
-  @media (min-width: variables.$width-tablet) {
-    width: 632px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    width: 244px;
-    margin-left: 33px;
   }
 }

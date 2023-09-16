@@ -90,6 +90,18 @@
   }
 }
 
+.example__description br {
+  display: none;
+
+  @media (min-width: variables.$width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    display: none;
+  }
+}
+
 .example__container {
   @media (min-width: variables.$width-tablet) {
     display: flex;

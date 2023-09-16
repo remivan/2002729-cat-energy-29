@@ -23,6 +23,7 @@
   }
 
   &--catalog-card {
+    margin: 0 auto;
     width: 280px;
 
     @media (min-width: variables.$width-tablet) {

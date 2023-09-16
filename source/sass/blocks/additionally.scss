@@ -44,15 +44,11 @@
 .additionally__list {
   @include list;
   margin-bottom: 34px;
-  border-bottom: 1px solid variables.$color-card-border;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: variables.$width-tablet) {
     margin-bottom: 71px;
     border-bottom: none;
-  }
-
-  @media (min-width: variables.$width-desktop) {
-    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -61,5 +57,17 @@
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 80px;
+  }
+}
+
+.additionally__button {
+  @media (min-width: variables.$width-tablet) {
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$width-desktop) {
+    width: 244px;
+    margin-left: 33px;
   }
 }
