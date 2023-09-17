@@ -4,7 +4,7 @@
 .navigation-list {
   @include list;
   font-family: variables.$oswald-font;
-
+  display: none;
 
   @media (min-width: variables.$width-tablet) {
     font-size: 18px;
@@ -26,6 +26,10 @@
     width: 475px;
     margin-right: 21px;
   }
+}
+
+.main-nav--nojs .navigation-list {
+  display: block;
 }
 
 .navigation-list__link {
