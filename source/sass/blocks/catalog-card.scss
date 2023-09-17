@@ -158,13 +158,13 @@
   @media (min-width: variables.$width-tablet) {
     width: 324px;
     justify-content: center;
-    background-image: linear-gradient(variables.$color-white 16%, variables.$color-grey-light 16%);
+    background-image: linear-gradient(variables.$color-white 82px, variables.$color-grey-light 82px);
     padding: 13px 37px 40px;
   }
 
   @media (min-width: variables.$width-desktop) {
     width: 245px;
-    padding: 10px 38px 40px;
+    padding: 11px 38px 40px;
   }
 
   &--more {
@@ -272,7 +272,7 @@
     }
 
     @media (min-width: variables.$width-desktop) {
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
   }
 }
